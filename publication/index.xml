@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publications | Academic</title>
+    <title>Publications | Jianan Zhao - CWRU</title>
     <link>https://Andy-Border.github.io/publication/</link>
       <atom:link href="https://Andy-Border.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
@@ -23,7 +23,7 @@
     <item>
       <title>Network Schema Preserving Heterogeneous Information Network Embedding</title>
       <link>https://Andy-Border.github.io/publication/ijcai20nshe/</link>
-      <pubDate>Fri, 01 May 2020 10:54:51 +0800</pubDate>
+      <pubDate>Tue, 21 Apr 2020 10:54:51 +0800</pubDate>
       <guid>https://Andy-Border.github.io/publication/ijcai20nshe/</guid>
       <description></description>
     </item>
