@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Academic</title>
-    <link>https://andy-border.github.io/</link>
-      <atom:link href="https://andy-border.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <description>Academic</description>
+    <title>Jianan Zhao - CWRU</title>
+    <link>https://Andy-Border.github.io/</link>
+      <atom:link href="https://Andy-Border.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <description>Jianan Zhao - CWRU</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://andy-border.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
-      <title>Academic</title>
-      <link>https://andy-border.github.io/</link>
+      <url>https://Andy-Border.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Jianan Zhao - CWRU</title>
+      <link>https://Andy-Border.github.io/</link>
     </image>
     
     <item>
       <title>Example Talk</title>
-      <link>https://andy-border.github.io/talk/example/</link>
+      <link>https://Andy-Border.github.io/talk/example/</link>
       <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>https://andy-border.github.io/talk/example/</guid>
+      <guid>https://Andy-Border.github.io/talk/example/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
@@ -34,25 +34,25 @@
     
     <item>
       <title>Heterogeneous Graph Structure Learning for Graph Neural Networks</title>
-      <link>https://andy-border.github.io/publication/aaai21hgsl/</link>
+      <link>https://Andy-Border.github.io/publication/aaai21hgsl/</link>
       <pubDate>Tue, 08 Dec 2020 10:57:44 +0800</pubDate>
-      <guid>https://andy-border.github.io/publication/aaai21hgsl/</guid>
+      <guid>https://Andy-Border.github.io/publication/aaai21hgsl/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Network Schema Preserving Heterogeneous Information Network Embedding</title>
-      <link>https://andy-border.github.io/publication/ijcai20nshe/</link>
+      <link>https://Andy-Border.github.io/publication/ijcai20nshe/</link>
       <pubDate>Tue, 21 Apr 2020 10:54:51 +0800</pubDate>
-      <guid>https://andy-border.github.io/publication/ijcai20nshe/</guid>
+      <guid>https://Andy-Border.github.io/publication/ijcai20nshe/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Slides</title>
-      <link>https://andy-border.github.io/slides/example/</link>
+      <link>https://Andy-Border.github.io/slides/example/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://andy-border.github.io/slides/example/</guid>
+      <guid>https://Andy-Border.github.io/slides/example/</guid>
       <description>&lt;h1 id=&#34;create-slides-in-markdown-with-wowchemy&#34;&gt;Create slides in Markdown with Wowchemy&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://wowchemy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wowchemy&lt;/a&gt; | &lt;a href=&#34;https://owchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
@@ -179,9 +179,9 @@ Three
     
     <item>
       <title>Example Project</title>
-      <link>https://andy-border.github.io/project/example/</link>
+      <link>https://Andy-Border.github.io/project/example/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://andy-border.github.io/project/example/</guid>
+      <guid>https://Andy-Border.github.io/project/example/</guid>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
 &lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
 &lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
