@@ -1,23 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Guojie Song | Jianan Zhao&#39;s Homepage</title>
+    <title>Guojie Song on Jianan Zhao&#39;s Homepage</title>
     <link>https://Andy-Border.github.io/author/guojie-song/</link>
-      <atom:link href="https://Andy-Border.github.io/author/guojie-song/index.xml" rel="self" type="application/rss+xml" />
-    <description>Guojie Song</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 08 Dec 2020 10:57:44 +0800</lastBuildDate>
-    <image>
-      <url>https://Andy-Border.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
-      <title>Guojie Song</title>
-      <link>https://Andy-Border.github.io/author/guojie-song/</link>
-    </image>
-    
+    <description>Recent content in Guojie Song on Jianan Zhao&#39;s Homepage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Dec 2020 10:57:44 +0800</lastBuildDate><atom:link href="https://Andy-Border.github.io/author/guojie-song/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Heterogeneous Graph Structure Learning for Graph Neural Networks</title>
       <link>https://Andy-Border.github.io/publication/aaai21hgsl/</link>
       <pubDate>Tue, 08 Dec 2020 10:57:44 +0800</pubDate>
+      
       <guid>https://Andy-Border.github.io/publication/aaai21hgsl/</guid>
-      <description></description>
+      <description>We propose a Heterogeneous Graph Structure Learning (HGSL) framework to learn optimal heterogeneous graph structures (for downstream tasks) for GNNs.</description>
     </item>
     
   </channel>

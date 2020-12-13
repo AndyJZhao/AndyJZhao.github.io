@@ -1,31 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Jianan Zhao | Jianan Zhao&#39;s Homepage</title>
+    <title>Jianan Zhao on Jianan Zhao&#39;s Homepage</title>
     <link>https://Andy-Border.github.io/author/jianan-zhao/</link>
-      <atom:link href="https://Andy-Border.github.io/author/jianan-zhao/index.xml" rel="self" type="application/rss+xml" />
-    <description>Jianan Zhao</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 08 Dec 2020 10:57:44 +0800</lastBuildDate>
-    <image>
-      <url>https://Andy-Border.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
-      <title>Jianan Zhao</title>
-      <link>https://Andy-Border.github.io/author/jianan-zhao/</link>
-    </image>
-    
+    <description>Recent content in Jianan Zhao on Jianan Zhao&#39;s Homepage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Dec 2020 10:57:44 +0800</lastBuildDate><atom:link href="https://Andy-Border.github.io/author/jianan-zhao/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Heterogeneous Graph Structure Learning for Graph Neural Networks</title>
       <link>https://Andy-Border.github.io/publication/aaai21hgsl/</link>
       <pubDate>Tue, 08 Dec 2020 10:57:44 +0800</pubDate>
+      
       <guid>https://Andy-Border.github.io/publication/aaai21hgsl/</guid>
-      <description></description>
+      <description>We propose a Heterogeneous Graph Structure Learning (HGSL) framework to learn optimal heterogeneous graph structures (for downstream tasks) for GNNs.</description>
     </item>
     
     <item>
       <title>Network Schema Preserving Heterogeneous Information Network Embedding</title>
       <link>https://Andy-Border.github.io/publication/ijcai20nshe/</link>
       <pubDate>Tue, 21 Apr 2020 10:54:51 +0800</pubDate>
+      
       <guid>https://Andy-Border.github.io/publication/ijcai20nshe/</guid>
-      <description></description>
+      <description>We propose to preserve network schema proximity in heterogeneous information network embedding.</description>
     </item>
     
   </channel>
