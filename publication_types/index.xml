@@ -1,20 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publication_types on Jianan Zhao - CWRU</title>
-    <link>https://Andy-Border.github.io/publication_types/</link>
-    <description>Recent content in Publication_types on Jianan Zhao - CWRU</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 08 Dec 2020 10:57:44 +0800</lastBuildDate><atom:link href="https://Andy-Border.github.io/publication_types/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>1</title>
-      <link>https://Andy-Border.github.io/publication-type/1/</link>
-      <pubDate>Tue, 08 Dec 2020 10:57:44 +0800</pubDate>
-      
-      <guid>https://Andy-Border.github.io/publication-type/1/</guid>
-      <description></description>
-    </item>
+    <title>Publication_types | Academic</title>
+    <link>https://andy-border.github.io/publication_types/</link>
+      <atom:link href="https://andy-border.github.io/publication_types/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publication_types</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 08 Dec 2020 10:57:44 +0800</lastBuildDate>
+    <image>
+      <url>https://andy-border.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Publication_types</title>
+      <link>https://andy-border.github.io/publication_types/</link>
+    </image>
     
   </channel>
 </rss>
