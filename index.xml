@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Jianan Zhao - CWRU</title>
+    <title>Jianan (Andy) Zhao - CWRU</title>
     <link>https://Andy-Border.github.io/</link>
       <atom:link href="https://Andy-Border.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <description>Jianan Zhao - CWRU</description>
+    <description>Jianan (Andy) Zhao - CWRU</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
     <image>
       <url>https://Andy-Border.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
-      <title>Jianan Zhao - CWRU</title>
+      <title>Jianan (Andy) Zhao - CWRU</title>
       <link>https://Andy-Border.github.io/</link>
     </image>
     
@@ -30,6 +30,14 @@
 &lt;/ul&gt;
 &lt;p&gt;Further event details, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;page elements&lt;/a&gt; such as image galleries, can be added to the body of this page.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Multi-View Self-Supervised Heterogeneous Graph Embedding</title>
+      <link>https://Andy-Border.github.io/publication/pkdd21mvse/</link>
+      <pubDate>Sun, 19 Sep 2021 08:03:00 -0500</pubDate>
+      <guid>https://Andy-Border.github.io/publication/pkdd21mvse/</guid>
+      <description></description>
     </item>
     
     <item>
