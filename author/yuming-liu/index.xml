@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Qianlong Wen | Jianan (Andy) Zhao - CWRU</title>
-    <link>https://Andy-Border.github.io/author/qianlong-wen/</link>
-      <atom:link href="https://Andy-Border.github.io/author/qianlong-wen/index.xml" rel="self" type="application/rss+xml" />
-    <description>Qianlong Wen</description>
+    <title>Yuming Liu | Jianan (Andy) Zhao - CWRU</title>
+    <link>https://Andy-Border.github.io/author/yuming-liu/</link>
+      <atom:link href="https://Andy-Border.github.io/author/yuming-liu/index.xml" rel="self" type="application/rss+xml" />
+    <description>Yuming Liu</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 26 Oct 2021 08:03:00 -0500</lastBuildDate>
     <image>
       <url>https://Andy-Border.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
-      <title>Qianlong Wen</title>
-      <link>https://Andy-Border.github.io/author/qianlong-wen/</link>
+      <title>Yuming Liu</title>
+      <link>https://Andy-Border.github.io/author/yuming-liu/</link>
     </image>
     
     <item>
@@ -17,14 +17,6 @@
       <link>https://Andy-Border.github.io/publication/www22gophormer/</link>
       <pubDate>Tue, 26 Oct 2021 08:03:00 -0500</pubDate>
       <guid>https://Andy-Border.github.io/publication/www22gophormer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Multi-View Self-Supervised Heterogeneous Graph Embedding</title>
-      <link>https://Andy-Border.github.io/publication/pkdd21mvse/</link>
-      <pubDate>Sun, 19 Sep 2021 08:03:00 -0500</pubDate>
-      <guid>https://Andy-Border.github.io/publication/pkdd21mvse/</guid>
       <description></description>
     </item>
     
