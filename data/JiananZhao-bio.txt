@@ -1,0 +1,1 @@
+Jianan Zhao is a research intern at Microsoft Research Asia adviced by Chaozhuo Li and Xing Xie. He received BSc MSc majored in computer science at Beijing University of Posts and Telecommunications (BUPT) supervised by Prof. Chuan Shi. His research interests includes graph data mining, specifically on graph neural network, self-supervised learning, and graph transformers.
