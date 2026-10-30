@@ -57,6 +57,9 @@ figcaption strong { font-weight: 600; color: var(--text); }
 .motivation-figure { margin: 0; }
 .motivation-figure img { display: block; }
 .section-intro { max-width: 90ch; margin-bottom: 20px; }
+.repeat-detail + .section-intro { margin-top: 20px; }
+#models > p + p { margin-top: 14px; }
+#models > ul { list-style: disc; margin: 14px 0 14px 22px; }
 .method-roles { margin-top: 20px; }
 .routing-role, .supporting-role { border-radius: 9px; padding: 19px 22px; text-align: center; border: 1px solid #96b1d1; }
 .routing-role { background: var(--blue-wash); }
