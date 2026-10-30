@@ -103,14 +103,6 @@
         <a class="zoom-link" href="assets/repeat-compression.png" data-lightbox data-caption="Redundancy-aware compression across TE-derived and tandem-repeat sequence — original paper figure." aria-label="Enlarge Human and Mouse repeat compression results"><img src="assets/repeat-compression.png" alt="Human and Mouse BPT ratios for DNA transposon, LINE, LTR, SINE and tandem repeats, comparing GeneZip with H-Net. GeneZip has higher repeat/non-repeat BPT ratios in every displayed subset." loading="lazy" width="2228" height="560"></a>
         <figcaption>Repeat/non-repeat BPT on held-out human and mouse sequences. Ratios above 1 mean fewer tokens per base in repeats than in matched non-repeat positions from the same sequence window. TR denotes tandem repeats.</figcaption>
       </figure>
-      <div class="repeat-detail">
-        <h3 class="figure-heading">Predictable repeats receive fewer tokens</h3>
-        <figure class="tandem-figure">
-          <a class="zoom-link" href="assets/tandem-repeat.png" data-lightbox data-caption="Predictability and compression of tandem-repeat interiors — original paper figure." aria-label="Enlarge tandem-repeat predictability and compression results"><img src="assets/tandem-repeat.png" alt="Tandem-repeat positions have lower perplexity than matched non-repeat positions; GeneZip and GeneZip-128K allocate higher BPT to tandem-repeat interiors, unlike HNet." loading="lazy" width="2600" height="1053"></a>
-          <figcaption>Tandem repeats are easier to predict for all three models (PPL ratio &lt; 1, left). GeneZip and GeneZip-128K compress them more strongly than the background (BPT ratio &gt; 1, right); H-Net allocates more tokens per base to these repeats.</figcaption>
-        </figure>
-      </div>
-      <p class="section-intro">This behaviour transfers beyond the human training genome. Without further training, GeneZip shows stronger tandem-repeat compression relative to background than H-Net in all nine species of a separate evaluation panel, from mouse to Arabidopsis (<a href="assets/GeneZip-CameraReadyV7.8.pdf#page=22" target="_blank" rel="noopener">Table 11</a>).</p>
     </section>
 
     <section class="research-section downstream-section" id="downstream" aria-labelledby="downstream-heading">
