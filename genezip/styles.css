@@ -41,8 +41,6 @@ sup { font-size: .65em; vertical-align: super; line-height: 0; margin-left: 2px;
 .code-button.button { background: #253041; color: #fff; }
 .code-button.button:hover { background: #101d35; color: #fff; }
 .paper-button img, .code-button img { filter: invert(1); }
-.model-button.button { color: var(--ink); border-color: #8d99ac; background: #fff; }
-.model-button.button:hover { background: #f0f3f7; }
 .page-container, .page-footer { width: min(1120px, calc(100% - 64px)); margin: 0 auto; }
 .overview-figure { padding: 28px 0 27px; border-top: 1px solid var(--rule); }
 .overview-figure img { display: block; width: 100%; }
@@ -57,8 +55,6 @@ figcaption strong { font-weight: 600; color: var(--text); }
 .motivation-figure { margin: 0; }
 .motivation-figure img { display: block; }
 .section-intro { max-width: 90ch; margin-bottom: 20px; }
-#models > p + p { margin-top: 14px; }
-#models > ul { list-style: disc; margin: 14px 0 14px 22px; }
 .method-roles { margin-top: 20px; }
 .routing-role, .supporting-role { border-radius: 9px; padding: 19px 22px; text-align: center; border: 1px solid #96b1d1; }
 .routing-role { background: var(--blue-wash); }

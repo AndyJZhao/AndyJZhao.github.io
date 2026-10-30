@@ -24,7 +24,6 @@
       <nav class="resource-buttons" aria-label="Project resources">
         <a class="button resource-button paper-button" href="assets/GeneZip-CameraReadyV7.8.pdf" target="_blank" rel="noopener"><img src="assets/file-pdf.svg" alt="">Paper</a>
         <a class="button resource-button code-button" href="https://github.com/AndyJZhao/GeneZip" target="_blank" rel="noopener"><img src="assets/github.svg" alt="">Code</a>
-        <a class="button resource-button model-button" href="#models"><img src="assets/cube.svg" alt="">Models</a>
       </nav>
     </div>
   </header>
@@ -114,21 +113,12 @@
       <details class="benchmark-data"><summary>View all scores and source data</summary><div class="table-scroll"><table><caption>DNALongBench · Held-out test scores</caption><thead><tr><th scope="col">Model</th><th scope="col">Pretraining group</th><th scope="col">CMP SCC</th><th scope="col">eQTL AUROC</th><th scope="col">ETGP AUPRC</th><th scope="col">TISP PCC</th></tr></thead><tbody><tr><th scope="row">HyenaDNA-6.6M</th><td>DNALongBench-official</td><td>0.115</td><td>0.514</td><td>0.249</td><td>0.132</td></tr><tr><th scope="row">Caduceus-Ph-7.7M</th><td>DNALongBench-official</td><td>0.133</td><td>0.566</td><td>0.380</td><td>0.109</td></tr><tr><th scope="row">Caduceus-PS-7.7M</th><td>DNALongBench-official</td><td>0.127</td><td>0.538</td><td>0.376</td><td>0.108</td></tr><tr><th scope="row">JanusDNA-7.7M</th><td>External-pretraining</td><td>0.159</td><td>0.840</td><td>0.438</td><td>0.002</td></tr><tr><th scope="row">NTv3-100M-pre</th><td>External-pretraining</td><td>0.136</td><td>0.792</td><td>0.440</td><td>0.194</td></tr><tr><th scope="row">Evo2-1B</th><td>External-pretraining</td><td>0.018</td><td>0.754</td><td>0.095</td><td>-0.002</td></tr><tr><th scope="row">Mamba2-84M</th><td>Leakage-controlled-pretraining</td><td>0.111</td><td>0.762</td><td>0.322</td><td>0.294</td></tr><tr><th scope="row">U-Net-70M</th><td>Leakage-controlled-pretraining</td><td>0.131</td><td>0.769</td><td>0.244</td><td>0.008</td></tr><tr><th scope="row">H-Net-70M</th><td>Leakage-controlled-pretraining</td><td>0.118</td><td>0.809</td><td>0.131</td><td>0.235</td></tr><tr><th scope="row">GeneZip-70M</th><td>Leakage-controlled-pretraining</td><td>0.133</td><td>0.817</td><td>0.375</td><td>0.274</td></tr></tbody></table></div><p><a href="assets/dnalongbench.csv" download>Download scores (CSV)</a> · <a href="assets/GeneZip-CameraReadyV7.8.pdf" target="_blank" rel="noopener">Paper and evaluation protocols</a></p></details>
     </section>
 
-    <section class="research-section" id="models" aria-labelledby="models-heading">
-      <h2 id="models-heading">Model variants</h2>
-      <p>Compression supports both larger models and longer context. The 70M and 636M models each have 12.8K-context and 128K-context variants; the 128K variants receive an additional stage of long-context pretraining.</p>
-      <ul><li>GeneZip-70M and GeneZip-70M-128K</li><li>GeneZip-636M and GeneZip-636M-128K</li></ul>
-      <p>Regional priors also let the same architecture emphasize different genomic compartments. GeneZip-Regulome and GeneZip-PromoterDistal favor broader regulatory context; GeneZip-Intergenic shifts resolution toward distal intergenic sequence.</p>
-      <p>These choices produce task-dependent trade-offs: Intergenic improves ETGP AUPRC from 0.375 to 0.446 but lowers TISP PCC from 0.274 to 0.224. The default promoter/genic prior provides the broadest performance among the tested GeneZip configurations (<a href="assets/GeneZip-CameraReadyV7.8.pdf#page=23" target="_blank" rel="noopener">regional-prior comparison</a>).</p>
-    </section>
-
     <section class="research-section resources-section" id="resources" aria-labelledby="resources-heading">
       <div>
         <h2 id="resources-heading">Resources &amp; citation</h2>
         <nav class="resource-buttons" aria-label="Downloads and source code">
           <a class="button resource-button paper-button" href="assets/GeneZip-CameraReadyV7.8.pdf" target="_blank" rel="noopener"><img src="assets/file-pdf.svg" alt="">Paper</a>
           <a class="button resource-button code-button" href="https://github.com/AndyJZhao/GeneZip" target="_blank" rel="noopener"><img src="assets/github.svg" alt="">GitHub</a>
-          <a class="button resource-button model-button" href="#models"><img src="assets/cube.svg" alt="">Models</a>
         </nav>
       </div>
       <div class="citation-block">
