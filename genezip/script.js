@@ -25,6 +25,21 @@ dialog.addEventListener('click', event => {
 });
 dialog.addEventListener('close', () => activeFigureLink?.focus());
 
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+document.querySelectorAll('.routing-animation').forEach(figure => {
+  const image = figure.querySelector('img[data-animation]');
+  const button = figure.querySelector('.animation-toggle');
+  function showStill(still) {
+    image.src = still ? image.dataset.still : image.dataset.animation;
+    figure.querySelector('[data-lightbox]').href = image.src;
+    button.setAttribute('aria-pressed', String(still));
+    button.textContent = still ? 'Replay animation' : 'Show final checkpoint';
+  }
+  showStill(reducedMotion.matches);
+  button.addEventListener('click', () => showStill(button.getAttribute('aria-pressed') !== 'true'));
+  reducedMotion.addEventListener('change', event => showStill(event.matches));
+});
+
 document.getElementById('copy-citation').addEventListener('click', async () => {
   const bibtex = document.getElementById('bibtex');
   const status = document.getElementById('copy-status');

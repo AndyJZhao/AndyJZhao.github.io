@@ -7,8 +7,8 @@
   <meta name="description" content="GeneZip learns region-aware compression for long-context DNA modeling. Trained with gene-structure annotations, it compresses unseen DNA without annotations at inference.">
   <link rel="icon" href="assets/dna.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/bulma.min.css">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=25.5">
+  <script src="script.js?v=25.5" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to research</a>
@@ -89,13 +89,30 @@
           </div>
         </div>
       <h2 id="compression-heading">Learned regional preferences transfer to unseen DNA</h2>
-      <p class="section-intro">On held-out human and mouse sequences, GeneZip retains about twice its sequence-average token density in promoters. The loci below show how this learned preference appears locally: boundary probabilities peak near promoter and exonic features, with lower values across long intronic spans.</p>
+      <p class="section-intro">GeneZip is pretrained on human DNA. Its learned routing also transfers to mouse sequences, without annotations at inference. Watch the same model's routing evolve across training checkpoints on fixed human (left) and mouse (right) windows.</p>
+      <figure class="routing-animation" id="region-routing">
+        <a class="zoom-link" href="assets/genezip_region_human_mouse.gif" data-lightbox data-caption="Actual two-stage routing across 11 GeneZip checkpoints on fixed human and mouse sequences." aria-label="Enlarge human and mouse region-routing animation">
+          <img src="assets/genezip_region_human_mouse.gif" data-animation="assets/genezip_region_human_mouse.gif" data-still="assets/region_human_mouse_final.png" alt="Human on the left and mouse on the right: genomic regions, two stages of retained token boundaries, and compact latent sequences change across 11 training checkpoints." width="1760" height="990" loading="lazy">
+        </a>
+        <div class="animation-controls"><button type="button" class="animation-toggle" aria-pressed="false">Show final checkpoint</button><a href="assets/genezip_region_human_mouse.gif" download>Download GIF</a></div>
+        <figcaption>Each column follows one fixed 12,800-bp window through 11 checkpoints (9.83B–100.26B training bases). Ticks show actual retained boundaries, not boundary probabilities. Near- and distal-intergenic labels are combined as <strong>Intergenic</strong> for display.</figcaption>
+      </figure>
+      <details class="routing-details"><summary>View the paper's boundary-probability case studies</summary>
       <figure class="region-figure">
         <a class="zoom-link" href="assets/region-aware.png" data-lightbox data-caption="Learned boundary probabilities at a promoter-dense locus and an intron-dominated locus on held-out human chromosome 9." aria-label="Enlarge region-aware compression case studies"><img src="assets/region-aware.png" alt="Two chr9 loci show genomic region annotations above per-base boundary probabilities. GeneZip in blue concentrates peaks around promoters and transcribed features compared with H-Net in orange." width="1992" height="688" loading="lazy"></a>
         <figcaption>Two held-out chr9 loci: a promoter-dense transcript locus (top) and an intron-dominated gene locus (bottom). Curves show per-base boundary probability for GeneZip (blue) and H-Net (orange), computed from raw DNA without annotations.</figcaption>
       </figure>
+      </details>
       <h2 class="analysis-subheading" id="evidence-heading"><strong class="motivation-emphasis">Repeats</strong> are a major source of DNA redundancy</h2>
       <p class="section-intro">GeneZip is trained with gene-structure labels, without repeat-specific supervision. Yet it learns to allocate fewer tokens per base to repetitive DNA than to the surrounding sequence: <strong>emergent redundancy-aware compression</strong>.</p>
+      <figure class="routing-animation" id="repeat-routing">
+        <a class="zoom-link" href="assets/genezip_repeat_human_mouse.gif" data-lightbox data-caption="Actual routing across 11 GeneZip checkpoints, with post-hoc tandem-repeat annotations on human and mouse DNA." aria-label="Enlarge human and mouse tandem-repeat routing animation">
+          <img src="assets/genezip_repeat_human_mouse.gif" data-animation="assets/genezip_repeat_human_mouse.gif" data-still="assets/repeat_human_mouse_final.png" alt="Human on the left and mouse on the right: tandem repeats highlighted above two stages of actual routing boundaries as training progresses." width="1760" height="990" loading="lazy">
+        </a>
+        <div class="animation-controls"><button type="button" class="animation-toggle" aria-pressed="false">Show final checkpoint</button><a href="assets/genezip_repeat_human_mouse.gif" download>Download GIF</a></div>
+        <figcaption>Tandem repeats are annotated with TRF for interpretation only; repeat masks are never supplied to the router. The local detail view shows repeat boundaries and neighboring sequence.</figcaption>
+      </figure>
+      <p class="benchmark-note">These animation windows were selected for visible routing changes across checkpoints; they are illustrative examples, not population-level estimates. The quantitative results below summarize matched repeat and non-repeat positions. <a href="assets/routing-examples.json" download>Window and checkpoint details</a>.</p>
       <h3 class="figure-heading">Stronger repeat compression across human and mouse</h3>
       <p class="section-intro">GeneZip and H-Net predict repeat sequences with nearly identical perplexity, but allocate tokens differently. GeneZip has higher repeat-to-background compression ratios in all ten evaluated subsets, spanning transposon-derived and tandem repeats.</p>
       <figure class="repeat-figure">

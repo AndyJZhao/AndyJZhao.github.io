@@ -190,3 +190,11 @@ dialog::backdrop { background: rgb(15 24 40 / 72%); }
 @media (max-width: 600px) { .compression-metrics { grid-template-columns: 1fr; gap: 24px; } }
 
 .motivation-emphasis { color: var(--accent); font-weight: 800; }
+
+.routing-animation { margin: 22px 0 28px; }
+.routing-animation img { display: block; width: 100%; }
+.animation-controls { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 12px 20px; margin-top: 12px; font-size: 13px; }
+.animation-toggle { border: 1px solid var(--rule); border-radius: 5px; background: white; color: var(--link); padding: 7px 12px; font: inherit; cursor: pointer; }
+.animation-toggle:hover { border-color: var(--link); }
+.routing-details { margin-top: 18px; font-size: 14px; }
+.routing-details summary { color: var(--link); cursor: pointer; }
