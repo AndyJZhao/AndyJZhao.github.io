@@ -18,17 +18,22 @@ Intron + intergenic. Its lower panels compare an independent Original sequence
 bar (base-pair shares) with final-stage token shares on a logarithmic training
 axis. The input composition is a reference, not a 0B training checkpoint.
 Token shares are assigned by retained-boundary region and sum to 100%.
-Eight checkpoints cover an independent early rerun (~0.1/0.2/0.5/1B bases) and
-published weights (9.83/19.66/49.15/100.26B). Areas connect measured checkpoints
-within each run, with a gap between the two training trajectories. All eight
-points use the same historical inference implementation and H100 environment.
-All four early checkpoints retain eight final-stage tokens per window, matching
-the configured minimum (`min_routing_tokens: 8`). Their token-share percentages
-therefore change in increments of 12.5 percentage points.
+Eleven checkpoints cover an independent rerun (~0.1/0.2/0.5/1/2/5/9.83B bases)
+and published weights (9.83/19.66/49.15/100.26B). Each run is drawn separately,
+connecting only its own measured checkpoints. The two checkpoints near 9.83B
+are independent observations, identified by source and step; they are not merged
+into a single training trajectory. Hollow circles mark rerun checkpoints and
+diamonds mark published checkpoints. All eleven points use the same historical
+inference implementation and H100 environment.
+At the ~9.83B comparison, final token counts differ: Human 227 versus 57 and
+Mouse 161 versus 68 (rerun versus published). These remain separate trajectories.
+The first five rerun checkpoints (~0.1–2B) retain eight final-stage tokens per
+window, matching the configured minimum (`min_routing_tokens: 8`). Their
+token-share percentages therefore change in increments of 12.5 percentage points.
 `assets/region-token-shares.csv` provides exact counts and shares;
 `assets/routing-examples.json` records
 the original 11-point A100 export under `checkpoints` for the tandem-repeat
-animation and reference comparisons, and the eight-point H100 export under
+animation and reference comparisons, and the eleven-point H100 export under
 `region_checkpoints` for the region animation. It also records input base-pair
 counts and shares, run provenance, and diagnostic boundary comparisons with the
 earlier A100 export; those comparisons do not establish the cause of differences.

@@ -11,6 +11,15 @@ region_human_0,Human,153,early_rerun,501307740,8,Intron + intergenic,8,1.0
 region_human_0,Human,305,early_rerun,999339140,8,Promoter,1,0.125
 region_human_0,Human,305,early_rerun,999339140,8,Genic,1,0.125
 region_human_0,Human,305,early_rerun,999339140,8,Intron + intergenic,6,0.75
+region_human_0,Human,611,early_rerun,2001947792,8,Promoter,0,0.0
+region_human_0,Human,611,early_rerun,2001947792,8,Genic,0,0.0
+region_human_0,Human,611,early_rerun,2001947792,8,Intron + intergenic,8,1.0
+region_human_0,Human,1526,early_rerun,4999948612,84,Promoter,23,0.27380952380952384
+region_human_0,Human,1526,early_rerun,4999948612,84,Genic,28,0.3333333333333333
+region_human_0,Human,1526,early_rerun,4999948612,84,Intron + intergenic,33,0.39285714285714285
+region_human_0,Human,3000,early_rerun,9829524032,227,Promoter,68,0.29955947136563876
+region_human_0,Human,3000,early_rerun,9829524032,227,Genic,79,0.34801762114537443
+region_human_0,Human,3000,early_rerun,9829524032,227,Intron + intergenic,80,0.3524229074889868
 region_human_0,Human,3000,published,9829526200,57,Promoter,13,0.22807017543859648
 region_human_0,Human,3000,published,9829526200,57,Genic,17,0.2982456140350877
 region_human_0,Human,3000,published,9829526200,57,Intron + intergenic,27,0.47368421052631576
@@ -35,6 +44,15 @@ region_mouse_1,Mouse,153,early_rerun,501307740,8,Intron + intergenic,8,1.0
 region_mouse_1,Mouse,305,early_rerun,999339140,8,Promoter,0,0.0
 region_mouse_1,Mouse,305,early_rerun,999339140,8,Genic,3,0.375
 region_mouse_1,Mouse,305,early_rerun,999339140,8,Intron + intergenic,5,0.625
+region_mouse_1,Mouse,611,early_rerun,2001947792,8,Promoter,0,0.0
+region_mouse_1,Mouse,611,early_rerun,2001947792,8,Genic,0,0.0
+region_mouse_1,Mouse,611,early_rerun,2001947792,8,Intron + intergenic,8,1.0
+region_mouse_1,Mouse,1526,early_rerun,4999948612,65,Promoter,13,0.2
+region_mouse_1,Mouse,1526,early_rerun,4999948612,65,Genic,36,0.5538461538461539
+region_mouse_1,Mouse,1526,early_rerun,4999948612,65,Intron + intergenic,16,0.24615384615384617
+region_mouse_1,Mouse,3000,early_rerun,9829524032,161,Promoter,40,0.2484472049689441
+region_mouse_1,Mouse,3000,early_rerun,9829524032,161,Genic,94,0.5838509316770186
+region_mouse_1,Mouse,3000,early_rerun,9829524032,161,Intron + intergenic,27,0.16770186335403728
 region_mouse_1,Mouse,3000,published,9829526200,68,Promoter,14,0.20588235294117646
 region_mouse_1,Mouse,3000,published,9829526200,68,Genic,39,0.5735294117647058
 region_mouse_1,Mouse,3000,published,9829526200,68,Intron + intergenic,15,0.22058823529411764
