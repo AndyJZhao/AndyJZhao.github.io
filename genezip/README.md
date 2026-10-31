@@ -11,32 +11,39 @@ The official GeneZip code release is managed separately.
 The approved design, responsive styles, figure lightbox, and citation copy
 interaction are preserved. The motivation image is conceptual, not experiment data.
 Human/Mouse routing GIFs show actual two-stage masks on fixed 12,800-bp windows.
-Examples are selected for visible routing changes, not representative population
-estimates. The tandem-repeat animation retains 11 published checkpoints.
+The upper tracks are illustrative windows selected for visible routing changes.
+The tandem-repeat animation retains its original 11 published checkpoints.
 The region animation groups annotations as Promoter, Genic (CDS/UTR/exon), and
-Intron + intergenic. Its lower panels compare an independent Original sequence
-bar (base-pair shares) with final-stage token shares on a logarithmic training
-axis. The input composition is a reference, not a 0B training checkpoint.
-Token shares are assigned by retained-boundary region and sum to 100%.
+Intron + intergenic. Its lower panels average 256 fixed evaluation windows per
+species. Windows are sampled uniformly without replacement (seed 42) from all
+eligible non-overlapping 12.8-kb tiles in the prepared Human held-out and Mouse
+evaluation datasets, without model-output or annotation-diversity selection.
+All eleven checkpoints use exactly the same window set for each species.
+
+Each window's final-stage retained-boundary counts are divided by its own total
+token count, then those three fractions are averaged equally across windows.
+The plotted mean is not the pooled ratio of aggregate counts. The CSV separately
+reports mean shares, pooled shares, aggregate token counts, and per-window share
+standard deviations. Missing categories contribute zero; no temporal smoothing
+is applied. Original sequence bars average input base-pair shares over the same
+windows; they are independent references, not 0B training checkpoints.
+
 Eleven checkpoints cover an independent rerun (~0.1/0.2/0.5/1/2/5/9.83B bases)
-and published weights (9.83/19.66/49.15/100.26B). Each run is drawn separately,
-connecting only its own measured checkpoints. The two checkpoints near 9.83B
-are independent observations, identified by source and step; they are not merged
-into a single training trajectory. Hollow circles mark rerun checkpoints and
-diamonds mark published checkpoints. All eleven points use the same historical
-inference implementation and H100 environment.
-At the ~9.83B comparison, final token counts differ: Human 227 versus 57 and
-Mouse 161 versus 68 (rerun versus published). These remain separate trajectories.
-The first five rerun checkpoints (~0.1–2B) retain eight final-stage tokens per
-window, matching the configured minimum (`min_routing_tokens: 8`). Their
-token-share percentages therefore change in increments of 12.5 percentage points.
-`assets/region-token-shares.csv` provides exact counts and shares;
-`assets/routing-examples.json` records
-the original 11-point A100 export under `checkpoints` for the tandem-repeat
-animation and reference comparisons, and the eleven-point H100 export under
-`region_checkpoints` for the region animation. It also records input base-pair
-counts and shares, run provenance, and diagnostic boundary comparisons with the
-earlier A100 export; those comparisons do not establish the cause of differences.
+and published weights (9.83/19.66/49.15/100.26B). Each run connects only its own
+measured checkpoints. The two independent checkpoints near 9.83B retain separate
+identities. Hollow circles mark rerun checkpoints and diamonds mark published
+checkpoints. The historical inference implementation, H100 and bf16 are retained.
+
+`assets/region-token-shares.csv` contains the average composition results.
+`assets/region-composition-average.json` contains the fixed cohort manifest,
+per-window retained boundaries and counts, all aggregate results, and provenance.
+`assets/routing-examples.json` keeps the original tandem-repeat data, single-window
+region tracks, and their diagnostic comparisons separate from the average
+composition metadata. Sampling, mean definitions, analysis provenance and
+per-window count exports accompany the average results. Parent genomic intervals
+and sequence offsets are recorded separately because prepared sequences may be
+reverse-complemented without a stored strand field. These are averages over the
+prepared evaluation sample, not estimates for an entire genome.
 Animation
 controls switch to the final checkpoint; reduced-motion preferences show that
 static frame by default.
