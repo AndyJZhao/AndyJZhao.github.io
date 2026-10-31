@@ -12,8 +12,12 @@ The approved design, responsive styles, figure lightbox, and citation copy
 interaction are preserved. The motivation image is conceptual, not experiment data.
 Human/Mouse routing GIFs show actual two-stage masks on fixed 12,800-bp windows
 across 11 checkpoints of the human-trained GeneZip model. Examples are selected
-for visible routing changes, not representative population estimates. NIG/DIG
-are merged as Intergenic for display. `assets/routing-examples.json` records
+for visible routing changes, not representative population estimates. The region
+animation groups annotations as Promoter, Genic (CDS/UTR/exon), and Intron +
+intergenic. Its lower panels trace each group's share of final-stage tokens,
+assigned by the retained boundary position, across actual checkpoints (sum 100%).
+`assets/region-token-shares.csv` provides exact counts and shares;
+`assets/routing-examples.json` records
 the model revision, checkpoint progress, loci and routing outputs. Animation
 controls switch to the final checkpoint; reduced-motion preferences show that
 static frame by default.
