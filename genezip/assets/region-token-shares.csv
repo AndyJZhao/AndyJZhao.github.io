@@ -1,67 +1,49 @@
-sample_id,species,step,training_bases,total_tokens,group,token_count,token_share
-region_human_0,Human,3000,9829526200,55,Promoter,13,0.23636363636363636
-region_human_0,Human,3000,9829526200,55,Genic,16,0.2909090909090909
-region_human_0,Human,3000,9829526200,55,Intron + intergenic,26,0.4727272727272727
-region_human_0,Human,6000,19659024176,74,Promoter,25,0.33783783783783783
-region_human_0,Human,6000,19659024176,74,Genic,21,0.28378378378378377
-region_human_0,Human,6000,19659024176,74,Intron + intergenic,28,0.3783783783783784
-region_human_0,Human,9000,29488531704,57,Promoter,14,0.24561403508771928
-region_human_0,Human,9000,29488531704,57,Genic,21,0.3684210526315789
-region_human_0,Human,9000,29488531704,57,Intron + intergenic,22,0.38596491228070173
-region_human_0,Human,12000,39318040696,50,Promoter,17,0.34
-region_human_0,Human,12000,39318040696,50,Genic,16,0.32
-region_human_0,Human,12000,39318040696,50,Intron + intergenic,17,0.34
-region_human_0,Human,15000,49147543728,52,Promoter,11,0.21153846153846154
-region_human_0,Human,15000,49147543728,52,Genic,16,0.3076923076923077
-region_human_0,Human,15000,49147543728,52,Intron + intergenic,25,0.4807692307692308
-region_human_0,Human,18000,58977050408,211,Promoter,62,0.2938388625592417
-region_human_0,Human,18000,58977050408,211,Genic,94,0.44549763033175355
-region_human_0,Human,18000,58977050408,211,Intron + intergenic,55,0.26066350710900477
-region_human_0,Human,21000,68806566208,223,Promoter,76,0.34080717488789236
-region_human_0,Human,21000,68806566208,223,Genic,92,0.4125560538116592
-region_human_0,Human,21000,68806566208,223,Intron + intergenic,55,0.24663677130044842
-region_human_0,Human,24000,78636080568,224,Promoter,75,0.33482142857142855
-region_human_0,Human,24000,78636080568,224,Genic,93,0.41517857142857145
-region_human_0,Human,24000,78636080568,224,Intron + intergenic,56,0.25
-region_human_0,Human,27000,88465583416,220,Promoter,67,0.30454545454545456
-region_human_0,Human,27000,88465583416,220,Genic,96,0.43636363636363634
-region_human_0,Human,27000,88465583416,220,Intron + intergenic,57,0.2590909090909091
-region_human_0,Human,30000,98295086712,211,Promoter,64,0.3033175355450237
-region_human_0,Human,30000,98295086712,211,Genic,94,0.44549763033175355
-region_human_0,Human,30000,98295086712,211,Intron + intergenic,53,0.25118483412322273
-region_human_0,Human,30600,100260990464,212,Promoter,65,0.30660377358490565
-region_human_0,Human,30600,100260990464,212,Genic,97,0.45754716981132076
-region_human_0,Human,30600,100260990464,212,Intron + intergenic,50,0.2358490566037736
-region_mouse_1,Mouse,3000,9829526200,65,Promoter,13,0.2
-region_mouse_1,Mouse,3000,9829526200,65,Genic,38,0.5846153846153846
-region_mouse_1,Mouse,3000,9829526200,65,Intron + intergenic,14,0.2153846153846154
-region_mouse_1,Mouse,6000,19659024176,66,Promoter,10,0.15151515151515152
-region_mouse_1,Mouse,6000,19659024176,66,Genic,42,0.6363636363636364
-region_mouse_1,Mouse,6000,19659024176,66,Intron + intergenic,14,0.21212121212121213
-region_mouse_1,Mouse,9000,29488531704,46,Promoter,8,0.17391304347826086
-region_mouse_1,Mouse,9000,29488531704,46,Genic,28,0.6086956521739131
-region_mouse_1,Mouse,9000,29488531704,46,Intron + intergenic,10,0.21739130434782608
-region_mouse_1,Mouse,12000,39318040696,54,Promoter,16,0.2962962962962963
-region_mouse_1,Mouse,12000,39318040696,54,Genic,27,0.5
-region_mouse_1,Mouse,12000,39318040696,54,Intron + intergenic,11,0.2037037037037037
-region_mouse_1,Mouse,15000,49147543728,52,Promoter,11,0.21153846153846154
-region_mouse_1,Mouse,15000,49147543728,52,Genic,31,0.5961538461538461
-region_mouse_1,Mouse,15000,49147543728,52,Intron + intergenic,10,0.19230769230769232
-region_mouse_1,Mouse,18000,58977050408,203,Promoter,58,0.2857142857142857
-region_mouse_1,Mouse,18000,58977050408,203,Genic,121,0.5960591133004927
-region_mouse_1,Mouse,18000,58977050408,203,Intron + intergenic,24,0.11822660098522167
-region_mouse_1,Mouse,21000,68806566208,189,Promoter,49,0.25925925925925924
-region_mouse_1,Mouse,21000,68806566208,189,Genic,113,0.5978835978835979
-region_mouse_1,Mouse,21000,68806566208,189,Intron + intergenic,27,0.14285714285714285
-region_mouse_1,Mouse,24000,78636080568,193,Promoter,56,0.29015544041450775
-region_mouse_1,Mouse,24000,78636080568,193,Genic,112,0.5803108808290155
-region_mouse_1,Mouse,24000,78636080568,193,Intron + intergenic,25,0.12953367875647667
-region_mouse_1,Mouse,27000,88465583416,210,Promoter,55,0.2619047619047619
-region_mouse_1,Mouse,27000,88465583416,210,Genic,132,0.6285714285714286
-region_mouse_1,Mouse,27000,88465583416,210,Intron + intergenic,23,0.10952380952380952
-region_mouse_1,Mouse,30000,98295086712,212,Promoter,52,0.24528301886792453
-region_mouse_1,Mouse,30000,98295086712,212,Genic,129,0.6084905660377359
-region_mouse_1,Mouse,30000,98295086712,212,Intron + intergenic,31,0.14622641509433962
-region_mouse_1,Mouse,30600,100260990464,217,Promoter,53,0.24423963133640553
-region_mouse_1,Mouse,30600,100260990464,217,Genic,130,0.5990783410138248
-region_mouse_1,Mouse,30600,100260990464,217,Intron + intergenic,34,0.15668202764976957
+sample_id,species,step,source_run,training_bases,total_tokens,group,token_count,token_share
+region_human_0,Human,31,early_rerun,101572864,8,Promoter,1,0.125
+region_human_0,Human,31,early_rerun,101572864,8,Genic,0,0.0
+region_human_0,Human,31,early_rerun,101572864,8,Intron + intergenic,7,0.875
+region_human_0,Human,61,early_rerun,199869184,8,Promoter,0,0.0
+region_human_0,Human,61,early_rerun,199869184,8,Genic,0,0.0
+region_human_0,Human,61,early_rerun,199869184,8,Intron + intergenic,8,1.0
+region_human_0,Human,153,early_rerun,501307740,8,Promoter,0,0.0
+region_human_0,Human,153,early_rerun,501307740,8,Genic,0,0.0
+region_human_0,Human,153,early_rerun,501307740,8,Intron + intergenic,8,1.0
+region_human_0,Human,305,early_rerun,999339140,8,Promoter,1,0.125
+region_human_0,Human,305,early_rerun,999339140,8,Genic,1,0.125
+region_human_0,Human,305,early_rerun,999339140,8,Intron + intergenic,6,0.75
+region_human_0,Human,3000,published,9829526200,57,Promoter,13,0.22807017543859648
+region_human_0,Human,3000,published,9829526200,57,Genic,17,0.2982456140350877
+region_human_0,Human,3000,published,9829526200,57,Intron + intergenic,27,0.47368421052631576
+region_human_0,Human,6000,published,19659024176,74,Promoter,25,0.33783783783783783
+region_human_0,Human,6000,published,19659024176,74,Genic,22,0.2972972972972973
+region_human_0,Human,6000,published,19659024176,74,Intron + intergenic,27,0.36486486486486486
+region_human_0,Human,15000,published,49147543728,52,Promoter,11,0.21153846153846154
+region_human_0,Human,15000,published,49147543728,52,Genic,16,0.3076923076923077
+region_human_0,Human,15000,published,49147543728,52,Intron + intergenic,25,0.4807692307692308
+region_human_0,Human,30600,published,100260990464,209,Promoter,65,0.31100478468899523
+region_human_0,Human,30600,published,100260990464,209,Genic,96,0.45933014354066987
+region_human_0,Human,30600,published,100260990464,209,Intron + intergenic,48,0.22966507177033493
+region_mouse_1,Mouse,31,early_rerun,101572864,8,Promoter,0,0.0
+region_mouse_1,Mouse,31,early_rerun,101572864,8,Genic,0,0.0
+region_mouse_1,Mouse,31,early_rerun,101572864,8,Intron + intergenic,8,1.0
+region_mouse_1,Mouse,61,early_rerun,199869184,8,Promoter,0,0.0
+region_mouse_1,Mouse,61,early_rerun,199869184,8,Genic,0,0.0
+region_mouse_1,Mouse,61,early_rerun,199869184,8,Intron + intergenic,8,1.0
+region_mouse_1,Mouse,153,early_rerun,501307740,8,Promoter,0,0.0
+region_mouse_1,Mouse,153,early_rerun,501307740,8,Genic,0,0.0
+region_mouse_1,Mouse,153,early_rerun,501307740,8,Intron + intergenic,8,1.0
+region_mouse_1,Mouse,305,early_rerun,999339140,8,Promoter,0,0.0
+region_mouse_1,Mouse,305,early_rerun,999339140,8,Genic,3,0.375
+region_mouse_1,Mouse,305,early_rerun,999339140,8,Intron + intergenic,5,0.625
+region_mouse_1,Mouse,3000,published,9829526200,68,Promoter,14,0.20588235294117646
+region_mouse_1,Mouse,3000,published,9829526200,68,Genic,39,0.5735294117647058
+region_mouse_1,Mouse,3000,published,9829526200,68,Intron + intergenic,15,0.22058823529411764
+region_mouse_1,Mouse,6000,published,19659024176,61,Promoter,10,0.16393442622950818
+region_mouse_1,Mouse,6000,published,19659024176,61,Genic,40,0.6557377049180327
+region_mouse_1,Mouse,6000,published,19659024176,61,Intron + intergenic,11,0.18032786885245902
+region_mouse_1,Mouse,15000,published,49147543728,52,Promoter,11,0.21153846153846154
+region_mouse_1,Mouse,15000,published,49147543728,52,Genic,31,0.5961538461538461
+region_mouse_1,Mouse,15000,published,49147543728,52,Intron + intergenic,10,0.19230769230769232
+region_mouse_1,Mouse,30600,published,100260990464,216,Promoter,52,0.24074074074074073
+region_mouse_1,Mouse,30600,published,100260990464,216,Genic,131,0.6064814814814815
+region_mouse_1,Mouse,30600,published,100260990464,216,Intron + intergenic,33,0.1527777777777778
