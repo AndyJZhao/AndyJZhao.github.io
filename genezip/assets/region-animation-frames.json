@@ -1,0 +1,1660 @@
+{
+  "frame_count": 10,
+  "total_duration_ms": 24200,
+  "size": [
+    1760,
+    990
+  ],
+  "routing_input": "early/extended_mixed_routing.json",
+  "density_input": "average_749_pooled_preview/token_density_merged.csv",
+  "routing_input_sha256": "e64d049baa09a03dc7b54d8c278370383d7965019c4fd432afb32a432f8e5868",
+  "density_input_sha256": "1fb18bac3a7adffb43c4608baf041466c35a81da777c5e5e2c5cb905cf6e3059",
+  "density_method": {
+    "source": "analysis/1031_routing_gifs/average_749/average.json",
+    "analysis_wandb_url": "https://wandb.ai/jzshared/DNAFM_v2/runs/dou3z4uq",
+    "aggregation": "pooled",
+    "metric": "pooled fractional token share / pooled original bp share across all windows",
+    "token_assignment": "fraction of token span overlapping each region",
+    "absent_region": "contributes zero regional bp/tokens to pooled totals",
+    "sample_counts_by_species": {
+      "Human": 749,
+      "Mouse": 749
+    },
+    "plot_table": "region-token-density.csv",
+    "plot_merge": {
+      "group_by": [
+        "species",
+        "group",
+        "step"
+      ],
+      "weighting": "equal weight per source checkpoint, after pooling windows",
+      "y": "arithmetic mean of relative_token_density",
+      "x": "arithmetic mean of actual training_bases",
+      "overlap_step": 3000,
+      "provenance": "source_count and source_provenance retained in the merged table; per-run tables unchanged",
+      "temporal_smoothing": "none"
+    },
+    "inference": "existing forward outputs; no reverse-complement averaging",
+    "table9_relation": "same fractional allocation; pooled cohort statistic rather than Table 9 per-window mean; different cohort and inference protocol",
+    "plot_y_limits": [
+      0.5,
+      2.5
+    ]
+  },
+  "overlap_rule": "At step 3000, lower density values and training bases are the equal-weight mean of both sources; upper illustrative routing uses the real published checkpoint. Discrete routing boundaries are never averaged.",
+  "animation": "One frame per unique step; measured points revealed in order; straight connecting lines, no temporal interpolation or smoothing.",
+  "frames": [
+    {
+      "frame": 1,
+      "step": 31,
+      "duration_ms": 2200,
+      "routing_source_run": "early_rerun",
+      "routing_training_bases": 101572864,
+      "routing_checkpoint": "checkpoint-31",
+      "illustrative_tracks": {
+        "Human": {
+          "sample_id": "region_human_0",
+          "input_bases": 12800,
+          "stage1_tokens": 138,
+          "stage2_tokens": 8,
+          "stage1_positions_sha256": "c4e8a6f7059f924d735307763b5b1927eb7979615dda6de444df6de191d9b10a",
+          "stage2_positions_sha256": "316aac86c66fa5ba7ec068242cc8e0bee1d948378f55c02a4d91adb55b864f61"
+        },
+        "Mouse": {
+          "sample_id": "region_mouse_1",
+          "input_bases": 12800,
+          "stage1_tokens": 178,
+          "stage2_tokens": 8,
+          "stage1_positions_sha256": "77bdcec161692f812e9b5d979163e558876e388ffafde5fd6f335b7c0ea0cee2",
+          "stage2_positions_sha256": "cfd41d97aa0f4cb42805960a22ba69bfac9a5b93d7f8d291fe574e21f76d7ffd"
+        }
+      },
+      "density_training_bases": 101572864.0,
+      "density_rows": [
+        {
+          "species": "Human",
+          "group": "Promoter",
+          "step": 31,
+          "training_bases": 101572864.0,
+          "relative_token_density": 0.8718136803157471,
+          "source_count": 1,
+          "source_runs": "early_rerun",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 101572864,
+              "valid_windows": 202,
+              "relative_token_density": 0.8718136803157471,
+              "fractional_tokens": 271.781921119382,
+              "total_tokens": 5992,
+              "input_bases": 498789,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Human",
+          "group": "Genic",
+          "step": 31,
+          "training_bases": 101572864.0,
+          "relative_token_density": 1.066197855184457,
+          "source_count": 1,
+          "source_runs": "early_rerun",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 101572864,
+              "valid_windows": 304,
+              "relative_token_density": 1.066197855184457,
+              "fractional_tokens": 205.3663662500137,
+              "total_tokens": 5992,
+              "input_bases": 308185,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Human",
+          "group": "Intron + intergenic",
+          "step": 31,
+          "training_bases": 101572864.0,
+          "relative_token_density": 1.0049584988141493,
+          "source_count": 1,
+          "source_runs": "early_rerun",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 101572864,
+              "valid_windows": 749,
+              "relative_token_density": 1.0049584988141493,
+              "fractional_tokens": 5514.851712630602,
+              "total_tokens": 5992,
+              "input_bases": 8780226,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Mouse",
+          "group": "Promoter",
+          "step": 31,
+          "training_bases": 101572864.0,
+          "relative_token_density": 1.2775332052139887,
+          "source_count": 1,
+          "source_runs": "early_rerun",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 101572864,
+              "valid_windows": 268,
+              "relative_token_density": 1.2775332052139887,
+              "fractional_tokens": 452.8016831317669,
+              "total_tokens": 5992,
+              "input_bases": 567095,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Mouse",
+          "group": "Genic",
+          "step": 31,
+          "training_bases": 101572864.0,
+          "relative_token_density": 0.9275302497422885,
+          "source_count": 1,
+          "source_runs": "early_rerun",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 101572864,
+              "valid_windows": 345,
+              "relative_token_density": 0.9275302497422885,
+              "fractional_tokens": 274.8214159345792,
+              "total_tokens": 5992,
+              "input_bases": 474070,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Mouse",
+          "group": "Intron + intergenic",
+          "step": 31,
+          "training_bases": 101572864.0,
+          "relative_token_density": 0.9856036210352332,
+          "source_count": 1,
+          "source_runs": "early_rerun",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 101572864,
+              "valid_windows": 749,
+              "relative_token_density": 0.9856036210352332,
+              "fractional_tokens": 5264.376900933649,
+              "total_tokens": 5992,
+              "input_bases": 8546035,
+              "total_bases": 9587200
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 2,
+      "step": 61,
+      "duration_ms": 2200,
+      "routing_source_run": "early_rerun",
+      "routing_training_bases": 199869184,
+      "routing_checkpoint": "checkpoint-61",
+      "illustrative_tracks": {
+        "Human": {
+          "sample_id": "region_human_0",
+          "input_bases": 12800,
+          "stage1_tokens": 48,
+          "stage2_tokens": 8,
+          "stage1_positions_sha256": "2e5637dc21385b5a1ea2cbcb3ba2db223242dad9ead77ee444ac9c462b0812b1",
+          "stage2_positions_sha256": "269ca9fd24660ea4d0e22812373b97a3dfaa748996288c57825febcf225a0ab7"
+        },
+        "Mouse": {
+          "sample_id": "region_mouse_1",
+          "input_bases": 12800,
+          "stage1_tokens": 69,
+          "stage2_tokens": 8,
+          "stage1_positions_sha256": "e4687b452b415d939f16f220817476e0e6174c3f97f3b382650533c90b54b2fc",
+          "stage2_positions_sha256": "4e9c04385ddcea3bea2eea9e06cc77ed9e093fbac47dcccd25dbd8f0243e204d"
+        }
+      },
+      "density_training_bases": 199869184.0,
+      "density_rows": [
+        {
+          "species": "Human",
+          "group": "Promoter",
+          "step": 61,
+          "training_bases": 199869184.0,
+          "relative_token_density": 0.8540064835069839,
+          "source_count": 1,
+          "source_runs": "early_rerun",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 199869184,
+              "valid_windows": 202,
+              "relative_token_density": 0.8540064835069839,
+              "fractional_tokens": 266.2306499387281,
+              "total_tokens": 5992,
+              "input_bases": 498789,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Human",
+          "group": "Genic",
+          "step": 61,
+          "training_bases": 199869184.0,
+          "relative_token_density": 1.024549831197055,
+          "source_count": 1,
+          "source_runs": "early_rerun",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 199869184,
+              "valid_windows": 304,
+              "relative_token_density": 1.024549831197055,
+              "fractional_tokens": 197.34430607966522,
+              "total_tokens": 5992,
+              "input_bases": 308185,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Human",
+          "group": "Intron + intergenic",
+          "step": 61,
+          "training_bases": 199869184.0,
+          "relative_token_density": 1.0074319351655152,
+          "source_count": 1,
+          "source_runs": "early_rerun",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 199869184,
+              "valid_windows": 749,
+              "relative_token_density": 1.0074319351655152,
+              "fractional_tokens": 5528.425043981607,
+              "total_tokens": 5992,
+              "input_bases": 8780226,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Mouse",
+          "group": "Promoter",
+          "step": 61,
+          "training_bases": 199869184.0,
+          "relative_token_density": 1.1308411983820057,
+          "source_count": 1,
+          "source_runs": "early_rerun",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 199869184,
+              "valid_windows": 268,
+              "relative_token_density": 1.1308411983820057,
+              "fractional_tokens": 400.8089933727772,
+              "total_tokens": 5992,
+              "input_bases": 567095,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Mouse",
+          "group": "Genic",
+          "step": 61,
+          "training_bases": 199869184.0,
+          "relative_token_density": 0.8982331768766778,
+          "source_count": 1,
+          "source_runs": "early_rerun",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 199869184,
+              "valid_windows": 345,
+              "relative_token_density": 0.8982331768766778,
+              "fractional_tokens": 266.14087635120416,
+              "total_tokens": 5992,
+              "input_bases": 474070,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Mouse",
+          "group": "Intron + intergenic",
+          "step": 61,
+          "training_bases": 199869184.0,
+          "relative_token_density": 0.996962943451745,
+          "source_count": 1,
+          "source_runs": "early_rerun",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 199869184,
+              "valid_windows": 749,
+              "relative_token_density": 0.996962943451745,
+              "fractional_tokens": 5325.05013027602,
+              "total_tokens": 5992,
+              "input_bases": 8546035,
+              "total_bases": 9587200
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 3,
+      "step": 153,
+      "duration_ms": 2200,
+      "routing_source_run": "early_rerun",
+      "routing_training_bases": 501307740,
+      "routing_checkpoint": "checkpoint-153",
+      "illustrative_tracks": {
+        "Human": {
+          "sample_id": "region_human_0",
+          "input_bases": 12800,
+          "stage1_tokens": 1955,
+          "stage2_tokens": 8,
+          "stage1_positions_sha256": "d6baeeffdbe56eecbca40cfb3815c0af7f6cf62cd03f76512779cf20ad96085a",
+          "stage2_positions_sha256": "b37e33c6b442d07416565cebe22d07ccf4fe0451a8e0e8ef8f3531f4b12eb43b"
+        },
+        "Mouse": {
+          "sample_id": "region_mouse_1",
+          "input_bases": 12800,
+          "stage1_tokens": 1899,
+          "stage2_tokens": 8,
+          "stage1_positions_sha256": "e618e7becc484a4ae73d502cd03dab628c2408076d471562d9dea5c3008788a9",
+          "stage2_positions_sha256": "f372441311befc9f4a2c9d4357c9509258f126cf617a55c64179533811c6e2bf"
+        }
+      },
+      "density_training_bases": 501307740.0,
+      "density_rows": [
+        {
+          "species": "Human",
+          "group": "Promoter",
+          "step": 153,
+          "training_bases": 501307740.0,
+          "relative_token_density": 0.8248648092424267,
+          "source_count": 1,
+          "source_runs": "early_rerun",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 501307740,
+              "valid_windows": 202,
+              "relative_token_density": 0.8248648092424267,
+              "fractional_tokens": 257.14593333576295,
+              "total_tokens": 5992,
+              "input_bases": 498789,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Human",
+          "group": "Genic",
+          "step": 153,
+          "training_bases": 501307740.0,
+          "relative_token_density": 1.2158174943585056,
+          "source_count": 1,
+          "source_runs": "early_rerun",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 501307740,
+              "valid_windows": 304,
+              "relative_token_density": 1.2158174943585056,
+              "fractional_tokens": 234.1854465617975,
+              "total_tokens": 5992,
+              "input_bases": 308185,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Human",
+          "group": "Intron + intergenic",
+          "step": 153,
+          "training_bases": 501307740.0,
+          "relative_token_density": 1.0023739471129667,
+          "source_count": 1,
+          "source_runs": "early_rerun",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 501307740,
+              "valid_windows": 749,
+              "relative_token_density": 1.0023739471129667,
+              "fractional_tokens": 5500.668620102435,
+              "total_tokens": 5992,
+              "input_bases": 8780226,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Mouse",
+          "group": "Promoter",
+          "step": 153,
+          "training_bases": 501307740.0,
+          "relative_token_density": 1.23744259578033,
+          "source_count": 1,
+          "source_runs": "early_rerun",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 501307740,
+              "valid_windows": 268,
+              "relative_token_density": 1.23744259578033,
+              "fractional_tokens": 438.59219303377887,
+              "total_tokens": 5992,
+              "input_bases": 567095,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Mouse",
+          "group": "Genic",
+          "step": 153,
+          "training_bases": 501307740.0,
+          "relative_token_density": 0.9315399638679422,
+          "source_count": 1,
+          "source_runs": "early_rerun",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 501307740,
+              "valid_windows": 345,
+              "relative_token_density": 0.9315399638679422,
+              "fractional_tokens": 276.0094691692971,
+              "total_tokens": 5992,
+              "input_bases": 474070,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Mouse",
+          "group": "Intron + intergenic",
+          "step": 153,
+          "training_bases": 501307740.0,
+          "relative_token_density": 0.9880415117039744,
+          "source_count": 1,
+          "source_runs": "early_rerun",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 501307740,
+              "valid_windows": 749,
+              "relative_token_density": 0.9880415117039744,
+              "fractional_tokens": 5277.398337796922,
+              "total_tokens": 5992,
+              "input_bases": 8546035,
+              "total_bases": 9587200
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 4,
+      "step": 305,
+      "duration_ms": 2200,
+      "routing_source_run": "early_rerun",
+      "routing_training_bases": 999339140,
+      "routing_checkpoint": "checkpoint-305",
+      "illustrative_tracks": {
+        "Human": {
+          "sample_id": "region_human_0",
+          "input_bases": 12800,
+          "stage1_tokens": 3285,
+          "stage2_tokens": 8,
+          "stage1_positions_sha256": "0936c4fd302d3700316696227e7eea83988a9aec44e0f4f4eeb90a2becbb92eb",
+          "stage2_positions_sha256": "d42cf07ce14d5f9334e9deb92867aec99d2c912ffcbc733cb0ea4919daf52847"
+        },
+        "Mouse": {
+          "sample_id": "region_mouse_1",
+          "input_bases": 12800,
+          "stage1_tokens": 3412,
+          "stage2_tokens": 8,
+          "stage1_positions_sha256": "71caf5c0b7c8d9e794b59b3c8826539a23f0b69036809de3565464eede9efb2e",
+          "stage2_positions_sha256": "f5d096fa40f45c67e26e5a8bbb570045d22721d7022f0a26854cb4c76ea0d627"
+        }
+      },
+      "density_training_bases": 999339140.0,
+      "density_rows": [
+        {
+          "species": "Human",
+          "group": "Promoter",
+          "step": 305,
+          "training_bases": 999339140.0,
+          "relative_token_density": 0.8980124517920033,
+          "source_count": 1,
+          "source_runs": "early_rerun",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 999339140,
+              "valid_windows": 202,
+              "relative_token_density": 0.8980124517920033,
+              "fractional_tokens": 279.94920801055093,
+              "total_tokens": 5992,
+              "input_bases": 498789,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Human",
+          "group": "Genic",
+          "step": 305,
+          "training_bases": 999339140.0,
+          "relative_token_density": 1.1585140166547423,
+          "source_count": 1,
+          "source_runs": "early_rerun",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 999339140,
+              "valid_windows": 304,
+              "relative_token_density": 1.1585140166547423,
+              "fractional_tokens": 223.14790138921356,
+              "total_tokens": 5992,
+              "input_bases": 308185,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Human",
+          "group": "Intron + intergenic",
+          "step": 305,
+          "training_bases": 999339140.0,
+          "relative_token_density": 1.0002299058088455,
+          "source_count": 1,
+          "source_runs": "early_rerun",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 999339140,
+              "valid_windows": 749,
+              "relative_token_density": 1.0002299058088455,
+              "fractional_tokens": 5488.902890600236,
+              "total_tokens": 5992,
+              "input_bases": 8780226,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Mouse",
+          "group": "Promoter",
+          "step": 305,
+          "training_bases": 999339140.0,
+          "relative_token_density": 0.9397695213025801,
+          "source_count": 1,
+          "source_runs": "early_rerun",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 999339140,
+              "valid_windows": 268,
+              "relative_token_density": 0.9397695213025801,
+              "fractional_tokens": 333.0866229269292,
+              "total_tokens": 5992,
+              "input_bases": 567095,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Mouse",
+          "group": "Genic",
+          "step": 305,
+          "training_bases": 999339140.0,
+          "relative_token_density": 0.9993097222578985,
+          "source_count": 1,
+          "source_runs": "early_rerun",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 999339140,
+              "valid_windows": 345,
+              "relative_token_density": 0.9993097222578985,
+              "fractional_tokens": 296.0892250192512,
+              "total_tokens": 5992,
+              "input_bases": 474070,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Mouse",
+          "group": "Intron + intergenic",
+          "step": 305,
+          "training_bases": 999339140.0,
+          "relative_token_density": 1.0040350458763758,
+          "source_count": 1,
+          "source_runs": "early_rerun",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 999339140,
+              "valid_windows": 749,
+              "relative_token_density": 1.0040350458763758,
+              "fractional_tokens": 5362.82415205382,
+              "total_tokens": 5992,
+              "input_bases": 8546035,
+              "total_bases": 9587200
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 5,
+      "step": 611,
+      "duration_ms": 2200,
+      "routing_source_run": "early_rerun",
+      "routing_training_bases": 2001947792,
+      "routing_checkpoint": "checkpoint-611",
+      "illustrative_tracks": {
+        "Human": {
+          "sample_id": "region_human_0",
+          "input_bases": 12800,
+          "stage1_tokens": 1468,
+          "stage2_tokens": 8,
+          "stage1_positions_sha256": "1f0540a111c07c0ccb4f45ee9113c587faefef2f021f2c7c1cb708147d46d1eb",
+          "stage2_positions_sha256": "c94bb6ed93353d4283d91ced95c76a52a48e12bc057c31ffee2d821c9428df26"
+        },
+        "Mouse": {
+          "sample_id": "region_mouse_1",
+          "input_bases": 12800,
+          "stage1_tokens": 1378,
+          "stage2_tokens": 8,
+          "stage1_positions_sha256": "310848ad668588ad5e07ffca667f6a32bff054c5c5cc51157f91481310c85541",
+          "stage2_positions_sha256": "77d778e644fafe70f4be628e5639aeba5cb398729edf894e39e8ab9f382f8593"
+        }
+      },
+      "density_training_bases": 2001947792.0,
+      "density_rows": [
+        {
+          "species": "Human",
+          "group": "Promoter",
+          "step": 611,
+          "training_bases": 2001947792.0,
+          "relative_token_density": 0.7103663636365204,
+          "source_count": 1,
+          "source_runs": "early_rerun",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 2001947792,
+              "valid_windows": 202,
+              "relative_token_density": 0.7103663636365204,
+              "fractional_tokens": 221.45183009493522,
+              "total_tokens": 5992,
+              "input_bases": 498789,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Human",
+          "group": "Genic",
+          "step": 611,
+          "training_bases": 2001947792.0,
+          "relative_token_density": 0.738702216500773,
+          "source_count": 1,
+          "source_runs": "early_rerun",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 2001947792,
+              "valid_windows": 304,
+              "relative_token_density": 0.738702216500773,
+              "fractional_tokens": 142.2855891201817,
+              "total_tokens": 5992,
+              "input_bases": 308185,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Human",
+          "group": "Intron + intergenic",
+          "step": 611,
+          "training_bases": 2001947792.0,
+          "relative_token_density": 1.0256250954423962,
+          "source_count": 1,
+          "source_runs": "early_rerun",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 2001947792,
+              "valid_windows": 749,
+              "relative_token_density": 1.0256250954423962,
+              "fractional_tokens": 5628.262580784881,
+              "total_tokens": 5992,
+              "input_bases": 8780226,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Mouse",
+          "group": "Promoter",
+          "step": 611,
+          "training_bases": 2001947792.0,
+          "relative_token_density": 1.0940556510460466,
+          "source_count": 1,
+          "source_runs": "early_rerun",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 2001947792,
+              "valid_windows": 268,
+              "relative_token_density": 1.0940556510460466,
+              "fractional_tokens": 387.77093089372363,
+              "total_tokens": 5992,
+              "input_bases": 567095,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Mouse",
+          "group": "Genic",
+          "step": 611,
+          "training_bases": 2001947792.0,
+          "relative_token_density": 0.9300274384086102,
+          "source_count": 1,
+          "source_runs": "early_rerun",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 2001947792,
+              "valid_windows": 345,
+              "relative_token_density": 0.9300274384086102,
+              "fractional_tokens": 275.5613173289812,
+              "total_tokens": 5992,
+              "input_bases": 474070,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Mouse",
+          "group": "Intron + intergenic",
+          "step": 611,
+          "training_bases": 2001947792.0,
+          "relative_token_density": 0.9976402393441717,
+          "source_count": 1,
+          "source_runs": "early_rerun",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 2001947792,
+              "valid_windows": 749,
+              "relative_token_density": 0.9976402393441717,
+              "fractional_tokens": 5328.667751777292,
+              "total_tokens": 5992,
+              "input_bases": 8546035,
+              "total_bases": 9587200
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 6,
+      "step": 1526,
+      "duration_ms": 2200,
+      "routing_source_run": "early_rerun",
+      "routing_training_bases": 4999948612,
+      "routing_checkpoint": "checkpoint-1526",
+      "illustrative_tracks": {
+        "Human": {
+          "sample_id": "region_human_0",
+          "input_bases": 12800,
+          "stage1_tokens": 1135,
+          "stage2_tokens": 84,
+          "stage1_positions_sha256": "7193498199fc445d8f7b6fc031ad43300a9819a9586387301db48a6086a9c98f",
+          "stage2_positions_sha256": "f37f38592f25656c4cc072d002c00fce557705ec0dc74e7cb79eba17d14c404d"
+        },
+        "Mouse": {
+          "sample_id": "region_mouse_1",
+          "input_bases": 12800,
+          "stage1_tokens": 1189,
+          "stage2_tokens": 65,
+          "stage1_positions_sha256": "a734c89abcd6db91f78576d6ec28e45c41f34e02e6668dc22c7b618d486cbfb3",
+          "stage2_positions_sha256": "e19756992bf38bdee232413b2e241533913081697c2fef9328676490d130451a"
+        }
+      },
+      "density_training_bases": 4999948612.0,
+      "density_rows": [
+        {
+          "species": "Human",
+          "group": "Promoter",
+          "step": 1526,
+          "training_bases": 4999948612.0,
+          "relative_token_density": 2.231400819020514,
+          "source_count": 1,
+          "source_runs": "early_rerun",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 4999948612,
+              "valid_windows": 202,
+              "relative_token_density": 2.231400819020514,
+              "fractional_tokens": 3136.111995030987,
+              "total_tokens": 27014,
+              "input_bases": 498789,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Human",
+          "group": "Genic",
+          "step": 1526,
+          "training_bases": 4999948612.0,
+          "relative_token_density": 1.2350014884186475,
+          "source_count": 1,
+          "source_runs": "early_rerun",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 4999948612,
+              "valid_windows": 304,
+              "relative_token_density": 1.2350014884186475,
+              "fractional_tokens": 1072.4476108974507,
+              "total_tokens": 27014,
+              "input_bases": 308185,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Human",
+          "group": "Intron + intergenic",
+          "step": 1526,
+          "training_bases": 4999948612.0,
+          "relative_token_density": 0.9217977855209272,
+          "source_count": 1,
+          "source_runs": "early_rerun",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 4999948612,
+              "valid_windows": 749,
+              "relative_token_density": 0.9217977855209272,
+              "fractional_tokens": 22805.440394071542,
+              "total_tokens": 27014,
+              "input_bases": 8780226,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Mouse",
+          "group": "Promoter",
+          "step": 1526,
+          "training_bases": 4999948612.0,
+          "relative_token_density": 2.2873673359386957,
+          "source_count": 1,
+          "source_runs": "early_rerun",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 4999948612,
+              "valid_windows": 268,
+              "relative_token_density": 2.2873673359386957,
+              "fractional_tokens": 3550.6954717243766,
+              "total_tokens": 26243,
+              "input_bases": 567095,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Mouse",
+          "group": "Genic",
+          "step": 1526,
+          "training_bases": 4999948612.0,
+          "relative_token_density": 1.508185139758892,
+          "source_count": 1,
+          "source_runs": "early_rerun",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 4999948612,
+              "valid_windows": 345,
+              "relative_token_density": 1.508185139758892,
+              "fractional_tokens": 1957.1261676339163,
+              "total_tokens": 26243,
+              "input_bases": 474070,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Mouse",
+          "group": "Intron + intergenic",
+          "step": 1526,
+          "training_bases": 4999948612.0,
+          "relative_token_density": 0.8863829941511288,
+          "source_count": 1,
+          "source_runs": "early_rerun",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 4999948612,
+              "valid_windows": 749,
+              "relative_token_density": 0.8863829941511288,
+              "fractional_tokens": 20735.17836064169,
+              "total_tokens": 26243,
+              "input_bases": 8546035,
+              "total_bases": 9587200
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 7,
+      "step": 3000,
+      "duration_ms": 2200,
+      "routing_source_run": "published",
+      "routing_training_bases": 9829526200,
+      "routing_checkpoint": "checkpoint-3000",
+      "illustrative_tracks": {
+        "Human": {
+          "sample_id": "region_human_0",
+          "input_bases": 12800,
+          "stage1_tokens": 824,
+          "stage2_tokens": 57,
+          "stage1_positions_sha256": "035c6c8817185284ad8cecb0cf5e9e3f9591795ac08aa0f5806860a16d8e9e1c",
+          "stage2_positions_sha256": "ed9525cb459da55fb364a40b054d71c4e17017239c6b6a9cb9d854fb9294d57a"
+        },
+        "Mouse": {
+          "sample_id": "region_mouse_1",
+          "input_bases": 12800,
+          "stage1_tokens": 868,
+          "stage2_tokens": 68,
+          "stage1_positions_sha256": "eb512fe5a016b97f04c97123f8f4ea83528371fa504cd4c1c0b6a3c36611f776",
+          "stage2_positions_sha256": "98eedb3dd02aff1de5ca6763c0b985e79d1ce484c024d165f15e75a3e42b34fb"
+        }
+      },
+      "density_training_bases": 9829525116.0,
+      "density_rows": [
+        {
+          "species": "Human",
+          "group": "Promoter",
+          "step": 3000,
+          "training_bases": 9829525116.0,
+          "relative_token_density": 2.3967881787266423,
+          "source_count": 2,
+          "source_runs": "early_rerun;published",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 9829524032,
+              "valid_windows": 202,
+              "relative_token_density": 2.5809397546930293,
+              "fractional_tokens": 6586.441105661713,
+              "total_tokens": 49051,
+              "input_bases": 498789,
+              "total_bases": 9587200
+            },
+            {
+              "source_run": "published",
+              "training_bases": 9829526200,
+              "valid_windows": 202,
+              "relative_token_density": 2.212636602760255,
+              "fractional_tokens": 1712.578688731111,
+              "total_tokens": 14877,
+              "input_bases": 498789,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Human",
+          "group": "Genic",
+          "step": 3000,
+          "training_bases": 9829525116.0,
+          "relative_token_density": 1.5748220712283705,
+          "source_count": 2,
+          "source_runs": "early_rerun;published",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 9829524032,
+              "valid_windows": 304,
+              "relative_token_density": 1.65871996083237,
+              "fractional_tokens": 2615.4152170075367,
+              "total_tokens": 49051,
+              "input_bases": 308185,
+              "total_bases": 9587200
+            },
+            {
+              "source_run": "published",
+              "training_bases": 9829526200,
+              "valid_windows": 304,
+              "relative_token_density": 1.490924181624371,
+              "fractional_tokens": 713.0018082476835,
+              "total_tokens": 14877,
+              "input_bases": 308185,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Human",
+          "group": "Intron + intergenic",
+          "step": 3000,
+          "training_bases": 9829525116.0,
+          "relative_token_density": 0.9004747578364843,
+          "source_count": 2,
+          "source_runs": "early_rerun;published",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 9829524032,
+              "valid_windows": 749,
+              "relative_token_density": 0.8870686277969718,
+              "fractional_tokens": 39849.14367733075,
+              "total_tokens": 49051,
+              "input_bases": 8780226,
+              "total_bases": 9587200
+            },
+            {
+              "source_run": "published",
+              "training_bases": 9829526200,
+              "valid_windows": 749,
+              "relative_token_density": 0.9138808878759969,
+              "fractional_tokens": 12451.419503021212,
+              "total_tokens": 14877,
+              "input_bases": 8780226,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Mouse",
+          "group": "Promoter",
+          "step": 3000,
+          "training_bases": 9829525116.0,
+          "relative_token_density": 2.2989676543048407,
+          "source_count": 2,
+          "source_runs": "early_rerun;published",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 9829524032,
+              "valid_windows": 268,
+              "relative_token_density": 2.3832620140344085,
+              "fractional_tokens": 8057.027640925079,
+              "total_tokens": 57153,
+              "input_bases": 567095,
+              "total_bases": 9587200
+            },
+            {
+              "source_run": "published",
+              "training_bases": 9829526200,
+              "valid_windows": 268,
+              "relative_token_density": 2.214673294575273,
+              "fractional_tokens": 2182.734082152259,
+              "total_tokens": 16662,
+              "input_bases": 567095,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Mouse",
+          "group": "Genic",
+          "step": 3000,
+          "training_bases": 9829525116.0,
+          "relative_token_density": 1.733896069203667,
+          "source_count": 2,
+          "source_runs": "early_rerun;published",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 9829524032,
+              "valid_windows": 345,
+              "relative_token_density": 1.7653640552425514,
+              "fractional_tokens": 4989.120544704085,
+              "total_tokens": 57153,
+              "input_bases": 474070,
+              "total_bases": 9587200
+            },
+            {
+              "source_run": "published",
+              "training_bases": 9829526200,
+              "valid_windows": 345,
+              "relative_token_density": 1.7024280831647827,
+              "fractional_tokens": 1402.6411982698119,
+              "total_tokens": 16662,
+              "input_bases": 474070,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Mouse",
+          "group": "Intron + intergenic",
+          "step": 3000,
+          "training_bases": 9829525116.0,
+          "relative_token_density": 0.8730924725389747,
+          "source_count": 2,
+          "source_runs": "early_rerun;published",
+          "source_provenance": [
+            {
+              "source_run": "early_rerun",
+              "training_bases": 9829524032,
+              "valid_windows": 749,
+              "relative_token_density": 0.8657532868145668,
+              "fractional_tokens": 44106.851814370864,
+              "total_tokens": 57153,
+              "input_bases": 8546035,
+              "total_bases": 9587200
+            },
+            {
+              "source_run": "published",
+              "training_bases": 9829526200,
+              "valid_windows": 749,
+              "relative_token_density": 0.8804316582633827,
+              "fractional_tokens": 13076.62471957793,
+              "total_tokens": 16662,
+              "input_bases": 8546035,
+              "total_bases": 9587200
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 8,
+      "step": 6000,
+      "duration_ms": 2200,
+      "routing_source_run": "published",
+      "routing_training_bases": 19659024176,
+      "routing_checkpoint": "checkpoint-6000",
+      "illustrative_tracks": {
+        "Human": {
+          "sample_id": "region_human_0",
+          "input_bases": 12800,
+          "stage1_tokens": 713,
+          "stage2_tokens": 74,
+          "stage1_positions_sha256": "d3ff318588d445dfa4432accbc9fb1d19eff715d4621d84d24075511e3ec7b99",
+          "stage2_positions_sha256": "ddff939720e1481c3b86cd7c8253b2f6de4c953f5e04f6801c36a55e7eb23e16"
+        },
+        "Mouse": {
+          "sample_id": "region_mouse_1",
+          "input_bases": 12800,
+          "stage1_tokens": 671,
+          "stage2_tokens": 61,
+          "stage1_positions_sha256": "cd635cd3ad1d5aca2765f6c2677fbd0c1bb38df9949d59f0a669175d9926cc65",
+          "stage2_positions_sha256": "1bf0f841b0950aef40c915d93422ee7fa88b797b37ec07db3f1070491ad49c14"
+        }
+      },
+      "density_training_bases": 19659024176.0,
+      "density_rows": [
+        {
+          "species": "Human",
+          "group": "Promoter",
+          "step": 6000,
+          "training_bases": 19659024176.0,
+          "relative_token_density": 2.145791271908862,
+          "source_count": 1,
+          "source_runs": "published",
+          "source_provenance": [
+            {
+              "source_run": "published",
+              "training_bases": 19659024176,
+              "valid_windows": 202,
+              "relative_token_density": 2.145791271908862,
+              "fractional_tokens": 1567.0644348922401,
+              "total_tokens": 14037,
+              "input_bases": 498789,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Human",
+          "group": "Genic",
+          "step": 6000,
+          "training_bases": 19659024176.0,
+          "relative_token_density": 1.5517410000762892,
+          "source_count": 1,
+          "source_runs": "published",
+          "source_provenance": [
+            {
+              "source_run": "published",
+              "training_bases": 19659024176,
+              "valid_windows": 304,
+              "relative_token_density": 1.5517410000762892,
+              "fractional_tokens": 700.185712577517,
+              "total_tokens": 14037,
+              "input_bases": 308185,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Human",
+          "group": "Intron + intergenic",
+          "step": 6000,
+          "training_bases": 19659024176.0,
+          "relative_token_density": 0.9155435881909352,
+          "source_count": 1,
+          "source_runs": "published",
+          "source_provenance": [
+            {
+              "source_run": "published",
+              "training_bases": 19659024176,
+              "valid_windows": 749,
+              "relative_token_density": 0.9155435881909352,
+              "fractional_tokens": 11769.749852530247,
+              "total_tokens": 14037,
+              "input_bases": 8780226,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Mouse",
+          "group": "Promoter",
+          "step": 6000,
+          "training_bases": 19659024176.0,
+          "relative_token_density": 2.208138042680636,
+          "source_count": 1,
+          "source_runs": "published",
+          "source_provenance": [
+            {
+              "source_run": "published",
+              "training_bases": 19659024176,
+              "valid_windows": 268,
+              "relative_token_density": 2.208138042680636,
+              "fractional_tokens": 2027.9153972476618,
+              "total_tokens": 15526,
+              "input_bases": 567095,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Mouse",
+          "group": "Genic",
+          "step": 6000,
+          "training_bases": 19659024176.0,
+          "relative_token_density": 1.6826844533527643,
+          "source_count": 1,
+          "source_runs": "published",
+          "source_provenance": [
+            {
+              "source_run": "published",
+              "training_bases": 19659024176,
+              "valid_windows": 345,
+              "relative_token_density": 1.6826844533527643,
+              "fractional_tokens": 1291.8525593607594,
+              "total_tokens": 15526,
+              "input_bases": 474070,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Mouse",
+          "group": "Intron + intergenic",
+          "step": 6000,
+          "training_bases": 19659024176.0,
+          "relative_token_density": 0.881960551049122,
+          "source_count": 1,
+          "source_runs": "published",
+          "source_provenance": [
+            {
+              "source_run": "published",
+              "training_bases": 19659024176,
+              "valid_windows": 749,
+              "relative_token_density": 0.881960551049122,
+              "fractional_tokens": 12206.232043391585,
+              "total_tokens": 15526,
+              "input_bases": 8546035,
+              "total_bases": 9587200
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 9,
+      "step": 15000,
+      "duration_ms": 2200,
+      "routing_source_run": "published",
+      "routing_training_bases": 49147543728,
+      "routing_checkpoint": "checkpoint-15000",
+      "illustrative_tracks": {
+        "Human": {
+          "sample_id": "region_human_0",
+          "input_bases": 12800,
+          "stage1_tokens": 750,
+          "stage2_tokens": 52,
+          "stage1_positions_sha256": "29054eb1ea3b6bf8c53ddc4f3fe8e56af5754526ee44c5e5d7f68d56b36c44f4",
+          "stage2_positions_sha256": "592fc4f9f847692c327d2874f1e9c226523927476b573f4876fcfe4819a07e9f"
+        },
+        "Mouse": {
+          "sample_id": "region_mouse_1",
+          "input_bases": 12800,
+          "stage1_tokens": 795,
+          "stage2_tokens": 52,
+          "stage1_positions_sha256": "205ae2c7e97ec9c93841bca09f79f775a492af8540a2f2f5b7f894d4649244e3",
+          "stage2_positions_sha256": "c1a94af17aaca6de7f6c75a1a3592b5d117d87642ee45adfcb83fda268eddc6f"
+        }
+      },
+      "density_training_bases": 49147543728.0,
+      "density_rows": [
+        {
+          "species": "Human",
+          "group": "Promoter",
+          "step": 15000,
+          "training_bases": 49147543728.0,
+          "relative_token_density": 2.0705128529888728,
+          "source_count": 1,
+          "source_runs": "published",
+          "source_provenance": [
+            {
+              "source_run": "published",
+              "training_bases": 49147543728,
+              "valid_windows": 202,
+              "relative_token_density": 2.0705128529888728,
+              "fractional_tokens": 1545.9134478730264,
+              "total_tokens": 14351,
+              "input_bases": 498789,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Human",
+          "group": "Genic",
+          "step": 15000,
+          "training_bases": 49147543728.0,
+          "relative_token_density": 1.3880010717044196,
+          "source_count": 1,
+          "source_runs": "published",
+          "source_provenance": [
+            {
+              "source_run": "published",
+              "training_bases": 49147543728,
+              "valid_windows": 304,
+              "relative_token_density": 1.3880010717044196,
+              "fractional_tokens": 640.3120508255365,
+              "total_tokens": 14351,
+              "input_bases": 308185,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Human",
+          "group": "Intron + intergenic",
+          "step": 15000,
+          "training_bases": 49147543728.0,
+          "relative_token_density": 0.9255672751803092,
+          "source_count": 1,
+          "source_runs": "published",
+          "source_provenance": [
+            {
+              "source_run": "published",
+              "training_bases": 49147543728,
+              "valid_windows": 749,
+              "relative_token_density": 0.9255672751803092,
+              "fractional_tokens": 12164.774501301436,
+              "total_tokens": 14351,
+              "input_bases": 8780226,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Mouse",
+          "group": "Promoter",
+          "step": 15000,
+          "training_bases": 49147543728.0,
+          "relative_token_density": 2.002966303595971,
+          "source_count": 1,
+          "source_runs": "published",
+          "source_provenance": [
+            {
+              "source_run": "published",
+              "training_bases": 49147543728,
+              "valid_windows": 268,
+              "relative_token_density": 2.002966303595971,
+              "fractional_tokens": 1989.956302888285,
+              "total_tokens": 16796,
+              "input_bases": 567095,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Mouse",
+          "group": "Genic",
+          "step": 15000,
+          "training_bases": 49147543728.0,
+          "relative_token_density": 1.502208461744511,
+          "source_count": 1,
+          "source_runs": "published",
+          "source_provenance": [
+            {
+              "source_run": "published",
+              "training_bases": 49147543728,
+              "valid_windows": 345,
+              "relative_token_density": 1.502208461744511,
+              "fractional_tokens": 1247.632719861176,
+              "total_tokens": 16796,
+              "input_bases": 474070,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Mouse",
+          "group": "Intron + intergenic",
+          "step": 15000,
+          "training_bases": 49147543728.0,
+          "relative_token_density": 0.9055867263126138,
+          "source_count": 1,
+          "source_runs": "published",
+          "source_provenance": [
+            {
+              "source_run": "published",
+              "training_bases": 49147543728,
+              "valid_windows": 749,
+              "relative_token_density": 0.9055867263126138,
+              "fractional_tokens": 13558.410977250533,
+              "total_tokens": 16796,
+              "input_bases": 8546035,
+              "total_bases": 9587200
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 10,
+      "step": 30600,
+      "duration_ms": 4400,
+      "routing_source_run": "published",
+      "routing_training_bases": 100260990464,
+      "routing_checkpoint": "checkpoint-30600",
+      "illustrative_tracks": {
+        "Human": {
+          "sample_id": "region_human_0",
+          "input_bases": 12800,
+          "stage1_tokens": 1447,
+          "stage2_tokens": 209,
+          "stage1_positions_sha256": "86fdedc8eadad4cb21f55194a26b35980bc583095df342119aba04c1928ba319",
+          "stage2_positions_sha256": "9e5e6a48863f43508368fd23ae8d18e12589d92db5bc815b5d128e4605b2cf46"
+        },
+        "Mouse": {
+          "sample_id": "region_mouse_1",
+          "input_bases": 12800,
+          "stage1_tokens": 1419,
+          "stage2_tokens": 216,
+          "stage1_positions_sha256": "ed8399ce5dc52b7462d3af1c6cc17e1ca57ddac5a9ade398a415437a2d3c23bc",
+          "stage2_positions_sha256": "ec3f80f708ef815e71d5961a1199e899917bf609b03cf5d6a212e748159df2fd"
+        }
+      },
+      "density_training_bases": 100260990464.0,
+      "density_rows": [
+        {
+          "species": "Human",
+          "group": "Promoter",
+          "step": 30600,
+          "training_bases": 100260990464.0,
+          "relative_token_density": 2.1533436430423714,
+          "source_count": 1,
+          "source_runs": "published",
+          "source_provenance": [
+            {
+              "source_run": "published",
+              "training_bases": 100260990464,
+              "valid_windows": 202,
+              "relative_token_density": 2.1533436430423714,
+              "fractional_tokens": 5994.3335834759255,
+              "total_tokens": 53506,
+              "input_bases": 498789,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Human",
+          "group": "Genic",
+          "step": 30600,
+          "training_bases": 100260990464.0,
+          "relative_token_density": 1.7360295388234719,
+          "source_count": 1,
+          "source_runs": "published",
+          "source_provenance": [
+            {
+              "source_run": "published",
+              "training_bases": 100260990464,
+              "valid_windows": 304,
+              "relative_token_density": 1.7360295388234719,
+              "fractional_tokens": 2985.9278207061716,
+              "total_tokens": 53506,
+              "input_bases": 308185,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Human",
+          "group": "Intron + intergenic",
+          "step": 30600,
+          "training_bases": 100260990464.0,
+          "relative_token_density": 0.9086460433032391,
+          "source_count": 1,
+          "source_runs": "published",
+          "source_provenance": [
+            {
+              "source_run": "published",
+              "training_bases": 100260990464,
+              "valid_windows": 749,
+              "relative_token_density": 0.9086460433032391,
+              "fractional_tokens": 44525.73859581789,
+              "total_tokens": 53506,
+              "input_bases": 8780226,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Mouse",
+          "group": "Promoter",
+          "step": 30600,
+          "training_bases": 100260990464.0,
+          "relative_token_density": 2.0351512468387094,
+          "source_count": 1,
+          "source_runs": "published",
+          "source_provenance": [
+            {
+              "source_run": "published",
+              "training_bases": 100260990464,
+              "valid_windows": 268,
+              "relative_token_density": 2.0351512468387094,
+              "fractional_tokens": 7532.648435351997,
+              "total_tokens": 62573,
+              "input_bases": 567095,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Mouse",
+          "group": "Genic",
+          "step": 30600,
+          "training_bases": 100260990464.0,
+          "relative_token_density": 1.8198651464992255,
+          "source_count": 1,
+          "source_runs": "published",
+          "source_provenance": [
+            {
+              "source_run": "published",
+              "training_bases": 100260990464,
+              "valid_windows": 345,
+              "relative_token_density": 1.8198651464992255,
+              "fractional_tokens": 5630.887761636928,
+              "total_tokens": 62573,
+              "input_bases": 474070,
+              "total_bases": 9587200
+            }
+          ]
+        },
+        {
+          "species": "Mouse",
+          "group": "Intron + intergenic",
+          "step": 30600,
+          "training_bases": 100260990464.0,
+          "relative_token_density": 0.8858297951825749,
+          "source_count": 1,
+          "source_runs": "published",
+          "source_provenance": [
+            {
+              "source_run": "published",
+              "training_bases": 100260990464,
+              "valid_windows": 749,
+              "relative_token_density": 0.8858297951825749,
+              "fractional_tokens": 49409.46380301109,
+              "total_tokens": 62573,
+              "input_bases": 8546035,
+              "total_bases": 9587200
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "published_density_csv": "region-token-density.csv",
+  "published_density_csv_sha256": "0e8d6f403fb3532f963c1547483a40af459e31d685fae18465422f6bafb91782"
+}

@@ -1,0 +1,32 @@
+{
+  "source": "analysis/1031_routing_gifs/average_749/average.json",
+  "analysis_wandb_url": "https://wandb.ai/jzshared/DNAFM_v2/runs/dou3z4uq",
+  "aggregation": "pooled",
+  "metric": "pooled fractional token share / pooled original bp share across all windows",
+  "token_assignment": "fraction of token span overlapping each region",
+  "absent_region": "contributes zero regional bp/tokens to pooled totals",
+  "sample_counts_by_species": {
+    "Human": 749,
+    "Mouse": 749
+  },
+  "plot_table": "region-token-density.csv",
+  "plot_merge": {
+    "group_by": [
+      "species",
+      "group",
+      "step"
+    ],
+    "weighting": "equal weight per source checkpoint, after pooling windows",
+    "y": "arithmetic mean of relative_token_density",
+    "x": "arithmetic mean of actual training_bases",
+    "overlap_step": 3000,
+    "provenance": "source_count and source_provenance retained in the merged table; per-run tables unchanged",
+    "temporal_smoothing": "none"
+  },
+  "inference": "existing forward outputs; no reverse-complement averaging",
+  "table9_relation": "same fractional allocation; pooled cohort statistic rather than Table 9 per-window mean; different cohort and inference protocol",
+  "plot_y_limits": [
+    0.5,
+    2.5
+  ]
+}
