@@ -31,15 +31,21 @@ a different evaluation cohort. No temporal smoothing is applied. Both charts use
 a logarithmic training-base axis and a shared linear Y range of 0.5–2.5.
 
 Eleven checkpoints cover an independent rerun (~0.1/0.2/0.5/1/2/5/9.83B bases)
-and published weights (9.83/19.66/49.15/100.26B). The displayed animation has ten
-frames. At the overlapping step 3000, the two density values and their actual
+and published weights (9.83/19.66/49.15/100.26B). The displayed animation visits ten
+checkpoints. At the overlapping step 3000, the two density values and their actual
 training-base counts are averaged with equal source weights. The single-window
 routing illustration at that frame uses the published checkpoint's actual masks;
 discrete token boundaries are never averaged. Other frames use their unique
 checkpoint. The two source runs remain identifiable in the downloadable data;
 the connected display is not a single-run training trace. Upper routing masks,
-token counts, compact latent sequences and lower-chart cursors advance in the
-same GIF frame. Each frame lasts 2.2 seconds, with a 4.4-second final hold.
+token counts and lower-chart cursors advance in the same GIF frame. Stage 1 and
+Stage 2 boundaries use region colors directly; the compact-token row is removed.
+Each checkpoint lasts 0.45 seconds (4.5 seconds total), followed by a 3-second
+in-place highlight of Token Density, including Promoter and Genic endpoint values.
+The 18-frame GIF loops in 7.5 seconds; the final checkpoint data stay fixed during
+the highlight. The static fallback shows the highlighted final checkpoint.
+The footnote defines Token Density and explains that values above 1 indicate
+denser-than-average token allocation.
 The historical inference implementation, H100 and bf16 are retained.
 
 `assets/region-token-density.csv` contains the 60 displayed density values with
