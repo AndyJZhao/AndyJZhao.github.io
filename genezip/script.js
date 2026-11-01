@@ -35,6 +35,22 @@ document.querySelectorAll('.routing-animation').forEach(figure => {
     button.setAttribute('aria-pressed', String(still));
     button.textContent = still ? 'Replay animation' : 'Show final checkpoint';
   }
+  figure.querySelectorAll('[data-species]').forEach(choice => {
+    choice.addEventListener('click', () => {
+      if (choice.getAttribute('aria-pressed') === 'true') return;
+      figure.querySelectorAll('[data-species]').forEach(item => {
+        item.setAttribute('aria-pressed', String(item === choice));
+      });
+      image.dataset.animation = choice.dataset.animation;
+      image.dataset.still = choice.dataset.still;
+      image.alt = `${choice.dataset.species} DNA: region-colored routing during training, fixed smooth token-density curves revealed checkpoint by checkpoint, then a two-stage compression illustration with BPT.`;
+      figure.querySelector('[data-lightbox]').setAttribute('aria-label', `Enlarge ${choice.dataset.species} compression training animation`);
+      const download = figure.querySelector('.animation-download');
+      download.href = choice.dataset.animation;
+      download.textContent = `Download ${choice.dataset.species} GIF`;
+      showStill(button.getAttribute('aria-pressed') === 'true');
+    });
+  });
   showStill(reducedMotion.matches);
   button.addEventListener('click', () => showStill(button.getAttribute('aria-pressed') !== 'true'));
   reducedMotion.addEventListener('change', event => showStill(event.matches));

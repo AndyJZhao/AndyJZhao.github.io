@@ -7,8 +7,8 @@
   <meta name="description" content="GeneZip learns region-aware compression for long-context DNA modeling. Trained with gene-structure annotations, it compresses unseen DNA without annotations at inference.">
   <link rel="icon" href="assets/dna.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/bulma.min.css">
-  <link rel="stylesheet" href="styles.css?v=25.5">
-  <script src="script.js?v=25.5" defer></script>
+  <link rel="stylesheet" href="styles.css?v=25.13">
+  <script src="script.js?v=25.13" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to research</a>
@@ -89,13 +89,17 @@
           </div>
         </div>
       <h2 id="compression-heading">Learned regional preferences transfer to unseen DNA</h2>
-      <p class="section-intro">GeneZip is pretrained on human DNA. Its learned routing also transfers to mouse sequences, without annotations at inference. Follow human (left) and mouse (right) examples across training: the routing tracks and token-density curves update together at every checkpoint.</p>
+      <p class="section-intro">GeneZip is pretrained on human DNA. Its learned routing also transfers to mouse sequences, without annotations at inference. Explore how compression evolves across ten training checkpoints, then watch the final model turn a 12,800-base sequence into a compact latent sequence. Switch between Human and Mouse to compare learned routing and token allocation.</p>
       <figure class="routing-animation" id="region-routing">
-        <a class="zoom-link" href="assets/genezip_region_human_mouse.gif?v=25.12" data-lightbox data-caption="Human and mouse routing examples and relative token density advance together through ten training checkpoints. Density curves pool 749 fixed windows per species: token share divided by original DNA share, with 1× indicating equal shares. A 7.5-second loop includes a final in-place highlight." aria-label="Enlarge human and mouse region-routing animation">
-          <img src="assets/genezip_region_human_mouse.gif?v=25.12" data-animation="assets/genezip_region_human_mouse.gif?v=25.12" data-still="assets/region_human_mouse_final.png?v=25.12" alt="Human on the left and mouse on the right: region-colored token boundaries in two routing stages change at each checkpoint, synchronized with three relative token-density curves pooled over 749 fixed windows per species. A log training axis spans 0.1B to 100B bases; both density axes span 0.5× to 2.5×. The 7.5-second loop ends by highlighting the density curves in place." width="1760" height="990" loading="lazy">
+        <div class="species-switch" role="group" aria-label="Choose species">
+          <button type="button" data-species="Human" data-animation="assets/genezip_region_human.gif?v=25.13" data-still="assets/region_human_final.png?v=25.13" aria-pressed="true">Human</button>
+          <button type="button" data-species="Mouse" data-animation="assets/genezip_region_mouse.gif?v=25.13" data-still="assets/region_mouse_final.png?v=25.13" aria-pressed="false">Mouse</button>
+        </div>
+        <a class="zoom-link" href="assets/genezip_region_human.gif?v=25.13" data-lightbox data-caption="Routing and Token Density evolve across ten training checkpoints. The final checkpoint then illustrates two-stage compression with actual token counts and BPT. Each 12-second loop uses 749 fixed windows for the density curves; token strips are expanded for readability." aria-label="Enlarge Human compression training animation">
+          <img src="assets/genezip_region_human.gif?v=25.13" data-animation="assets/genezip_region_human.gif?v=25.13" data-still="assets/region_human_final.png?v=25.13" alt="Human DNA: region-colored routing during training, fixed smooth token-density curves revealed checkpoint by checkpoint, then a two-stage compression illustration with BPT." width="1320" height="880" loading="lazy">
         </a>
-        <div class="animation-controls"><button type="button" class="animation-toggle" aria-pressed="false">Show final checkpoint</button><a href="assets/genezip_region_human_mouse.gif?v=25.12" download>Download GIF</a><a href="assets/region-token-density.csv?v=25.12" download>Token density (CSV)</a></div>
-        <figcaption>Three groups: <strong>Promoter</strong>, <strong>Genic</strong> (CDS, UTR and other exons), and <strong>Intron + intergenic</strong>. Upper tracks show actual routing on fixed illustrative windows. Lower curves pool <strong>749 fixed 12.8-kb windows per species</strong>, selected without using model outputs. <strong>Relative token density = token share / original DNA share</strong>: above 1×, a region receives a larger token share than its share of the input DNA. The cohort stays fixed across checkpoints, with no temporal smoothing.</figcaption>
+        <div class="animation-controls"><button type="button" class="animation-toggle" aria-pressed="false">Show final checkpoint</button><a class="animation-download" href="assets/genezip_region_human.gif?v=25.13" download>Download Human GIF</a><a href="assets/region-token-density.csv?v=25.13" download>Token density (CSV)</a></div>
+        <figcaption>Region colors mark <strong>Promoter</strong>, <strong>Genic</strong> (CDS, UTR and other exons), and <strong>Intron + intergenic</strong>. The first 6 seconds show routing across training checkpoints; the final 6 seconds illustrate compression by the final model. <strong>BPT = input base pairs / retained latent tokens</strong>; compact token strips are shown enlarged. Lower curves pool <strong>749 fixed 12.8-kb windows per species</strong>, selected without model outputs. <strong>Token Density = regional token share / original DNA share</strong>: values above 1 indicate denser-than-average allocation. Dots are measured checkpoints; a fixed, shape-preserving interpolated curve is progressively revealed.</figcaption>
       </figure>
       <details class="routing-details"><summary>View the paper's boundary-probability case studies</summary>
       <figure class="region-figure">
@@ -112,7 +116,7 @@
         <div class="animation-controls"><button type="button" class="animation-toggle" aria-pressed="false">Show final checkpoint</button><a href="assets/genezip_repeat_human_mouse.gif" download>Download GIF</a></div>
         <figcaption>Tandem repeats are annotated with TRF for interpretation only; repeat masks are never supplied to the router. The local detail view shows repeat boundaries and neighboring sequence.</figcaption>
       </figure>
-      <p class="benchmark-note">These animation windows were selected for visible routing changes across checkpoints; they are illustrative examples, not population-level estimates. The quantitative results below summarize matched repeat and non-repeat positions. <a href="assets/routing-examples.json?v=25.12" download>Window and checkpoint details</a>.</p>
+      <p class="benchmark-note">These animation windows were selected for visible routing changes across checkpoints; they are illustrative examples, not population-level estimates. The quantitative results below summarize matched repeat and non-repeat positions. <a href="assets/routing-examples.json?v=25.13" download>Window and checkpoint details</a>.</p>
       <h3 class="figure-heading">Stronger repeat compression across human and mouse</h3>
       <p class="section-intro">GeneZip and H-Net predict repeat sequences with nearly identical perplexity, but allocate tokens differently. GeneZip has higher repeat-to-background compression ratios in all ten evaluated subsets, spanning transposon-derived and tandem repeats.</p>
       <figure class="repeat-figure">

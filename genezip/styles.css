@@ -198,3 +198,8 @@ dialog::backdrop { background: rgb(15 24 40 / 72%); }
 .animation-toggle:hover { border-color: var(--link); }
 .routing-details { margin-top: 18px; font-size: 14px; }
 .routing-details summary { color: var(--link); cursor: pointer; }
+
+.species-switch { display: flex; justify-content: center; gap: 8px; margin-bottom: 12px; }
+.species-switch button { border: 1px solid var(--rule); border-radius: 5px; padding: 8px 24px; font: inherit; font-size: 14px; background: white; color: var(--link); cursor: pointer; }
+.species-switch button[aria-pressed="true"] { background: var(--link); color: white; border-color: var(--link); }
+.species-switch button:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }

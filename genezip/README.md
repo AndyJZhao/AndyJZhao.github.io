@@ -27,25 +27,28 @@ divided by pooled original DNA share. A value of 1 means equal shares; a value o
 2 means twice the token share relative to input coverage. This is a cohort-level
 statistic, distinct from Table 9's mean of per-window enrichment ratios. Routing
 uses forward inference; Table 9 also averages reverse-complement results and uses
-a different evaluation cohort. No temporal smoothing is applied. Both charts use
-a logarithmic training-base axis and a shared linear Y range of 0.5–2.5.
+a different evaluation cohort. Measured checkpoint values are unchanged. One shape-preserving PCHIP curve is
+fit to the complete series in log training bases and progressively revealed;
+previously shown segments do not change. Both charts use a logarithmic training-base
+axis and a shared linear Y range of 0.5–2.5.
 
-Eleven checkpoints cover an independent rerun (~0.1/0.2/0.5/1/2/5/9.83B bases)
-and published weights (9.83/19.66/49.15/100.26B). The displayed animation visits ten
-checkpoints. At the overlapping step 3000, the two density values and their actual
-training-base counts are averaged with equal source weights. The single-window
-routing illustration at that frame uses the published checkpoint's actual masks;
-discrete token boundaries are never averaged. Other frames use their unique
-checkpoint. The two source runs remain identifiable in the downloadable data;
-the connected display is not a single-run training trace. Upper routing masks,
-token counts and lower-chart cursors advance in the same GIF frame. Stage 1 and
-Stage 2 boundaries use region colors directly; the compact-token row is removed.
-Each checkpoint lasts 0.45 seconds (4.5 seconds total), followed by a 3-second
-in-place highlight of Token Density, including Promoter and Genic endpoint values.
-The 18-frame GIF loops in 7.5 seconds; the final checkpoint data stay fixed during
-the highlight. The static fallback shows the highlighted final checkpoint.
-The footnote defines Token Density and explains that values above 1 indicate
-denser-than-average token allocation.
+Eleven source checkpoints cover an independent rerun (~0.1/0.2/0.5/1/2/5/9.83B)
+and published weights (9.83/19.66/49.15/100.26B). At the overlapping step 3000,
+density values and training-base counts are averaged with equal source weights;
+the illustration uses actual published masks. Discrete boundaries are not averaged.
+Source identities remain in downloads; the connected display is not a single-run trace.
+
+Human and Mouse have separate GIFs, selected using the page buttons. Each 12-second
+loop first shows ten checkpoints at 0.6 seconds each, then uses 6 seconds to illustrate
+the final checkpoint's Stage 1 routing, Stage 2 routing and token compaction in source
+order. Region-colored token boundaries and density markers remain synchronized.
+The final token strip is expanded for readability; its width is not a physical scale.
+BPT is original input bases divided by the retained token count at the displayed stage.
+Final examples: Human 12,800 → 1,447 → 209 tokens (1.0 → 8.8 → 61.2 BPT);
+Mouse 12,800 → 1,419 → 216 tokens (1.0 → 9.0 → 59.3 BPT).
+The static fallback shows the compression result and density conclusion.
+GIF encoding merges identical final hold images into 34 frames; their total duration
+is exactly 12 seconds. Old paired region GIF/PNG assets have been removed.
 The historical inference implementation, H100 and bf16 are retained.
 
 `assets/region-token-density.csv` contains the 60 displayed density values with
